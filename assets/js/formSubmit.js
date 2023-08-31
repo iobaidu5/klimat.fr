@@ -1,6 +1,6 @@
 jQuery(document).ready(function ($) {
-    var successMessage = `<i class="fa fa-info-circle"></i><b>Succès:</b> Votre demande est envoyée avec succès`;
-    var ErrorMessage = `<i class="fa fa-info-circle"></i><b>Erreur:</b> Veuillez vérifier vos données d'entrée`;
+    var successMessage = `<i class="fa fa-info-circle"></i><b class="success-message">Succès:</b> Votre demande est envoyée avec succès`;
+    var ErrorMessage = `<i class="fa fa-info-circle"></i><b class="error-message">Erreur:</b> Veuillez vérifier vos données d'entrée`;
   
     $("#contactForm").on("submit", function (e) {
       sendFormData(e, "#contactForm", "contact");
@@ -16,7 +16,6 @@ jQuery(document).ready(function ($) {
         alert("Veuillez vérifier le reCAPTCHA");
         return false;
       }
-      var redirectUrl = $(id)[0]["redirectUrl"]["value"];
       $.ajax({
         url: $(id)[0]["action"],
         type: "POST",
@@ -53,6 +52,7 @@ jQuery(document).ready(function ($) {
             e.target.querySelector(
               "#devis-form-response"
             ).innerHTML = ErrorMessage;
+            console.log(textStatus);
           }
         },
       });
@@ -64,7 +64,7 @@ jQuery(document).ready(function ($) {
   var CaptchaCallback = function () {
     jQuery(".g-recaptcha").each(function () {
       grecaptcha.render(this, {
-        sitekey: "6Lcks8YnAAAAAIWesPLhiuZuT-Xh01WdoBSM8mDp",
+        sitekey: "6Lfn5-onAAAAAPr2clRUrAqMXp31ie6qOo0QYo8J",
         callback: correctCaptcha,
       });
     });
@@ -74,12 +74,12 @@ jQuery(document).ready(function ($) {
     if (grecaptcha === undefined) {
       return;
     }
+    console.log(grecaptcha.getResponse());
     document.querySelectorAll(".g-recaptcha").forEach((checkbox) => {
       checkbox.classList.add("hidden");
     });
     document.querySelectorAll(".form-submit").forEach((button) => {
-      button.classList.remove("disabled");
       button.innerHTML = "Envoyer";
-      button.removeAttr('disabled');
+      button.disabled = false
     });
   }
