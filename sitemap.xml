@@ -55,12 +55,12 @@
 <loc>http://localhost:4000/qui-sommes-nous</loc>
 </url>
 <url>
-<loc>http://localhost:4000/assets/pdf/Bi-bloc%20Basse%20Temperature%20Nouvelle%20Generation.pdf</loc>
-<lastmod>2023-08-21T12:00:09+05:00</lastmod>
-</url>
-<url>
 <loc>http://localhost:4000/assets/pdf/Bi-bloc-Basse-Temperature-Modele-Compact.pdf</loc>
 <lastmod>2023-08-21T12:00:17+05:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/assets/pdf/Bi-bloc-Basse-Temperature-Nouvelle-Generation.pdf</loc>
+<lastmod>2023-08-21T12:00:09+05:00</lastmod>
 </url>
 <url>
 <loc>http://localhost:4000/assets/pdf/Cassette%20FUQ.pdf</loc>
