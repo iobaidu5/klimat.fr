@@ -68,21 +68,54 @@
                             Klimat</a>
                     </li>
                     <li class="nav-item dropdown Navbar_nav-item">
-                        <a class="nav-link  Navbar_nav-link2  dropdown-toggle  d-flex align-items-center" href="#"
-                            id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+                        <a class="nav-link  Navbar_nav-link2  dropdown-toggle  d-flex align-items-center"
+                            href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
                             aria-expanded="false">Nos préstation
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <a class="dropdown-item  Navbar_nav-link2 "
-                                href="./pompe-a-chaleur.html">Pompe à chaleur</a>
+                                href="">Installations</a>
                             <a class="dropdown-item  Navbar_nav-link2 "
-                                href="./climatisation.html">Climatisation</a>
+                                href="">Entretien</a>
                             <a class="dropdown-item  Navbar_nav-link2 "
-                                href="./chauffe-eau.html">Chauffe-eau</a>
-                            <a class="dropdown-item  Navbar_nav-link2 "
-                                href="./nos-produits.html">Nos produits</a>
+                                href="">S.A.V</a>
                         </div>
                     </li>
+
+                    <li class="nav-item dropdown Navbar_nav-item">
+                        <a class="nav-link  Navbar_nav-link2  dropdown-toggle  d-flex align-items-center"
+                            href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false">Nos produits
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item  Navbar_nav-link2 "
+                                href="./climatisation.html">Climatisation réversible (monosplit & multisplit,
+                                gainable, VRV)</a>
+                            <a class="dropdown-item  Navbar_nav-link2 "
+                                href="./pompe-a-chaleur.html">Pompe à chaleur Air/Eau</a>
+                            <a class="dropdown-item  Navbar_nav-link2 "
+                                href="">Ballon thermodynamique</a>
+
+                            <!-- <a class="dropdown-item  Navbar_nav-link2 "
+                                href="/chauffe-eau">Chauffe-eau</a>
+                            <a class="dropdown-item  Navbar_nav-link2 "
+                                href="/nos-produits">Nos produits</a> -->
+
+                        </div>
+                    </li>
+
+                    <li class="nav-item Navbar_nav-item">
+                        <a class="nav-link  Navbar_nav-link2 "
+                            title="Nos réalisations" href="">
+                            Nos réalisations </a>
+                    </li>
+
+                    <li class="nav-item Navbar_nav-item">
+                        <a class="nav-link  Navbar_nav-link2 "
+                            title="Les aides" href="">
+                            Les aides </a>
+                    </li>
+
                     <li class="nav-item Navbar_nav-item">
                         <a class="nav-link  Navbar_nav-link2 "
                             title="Contact" href="./contact.html">
@@ -178,8 +211,7 @@
                                 <div class="form-group">
                                     <label for="name" class="boxes_content-p mb-4">Type de logement</label>
                                     <div class="form-check d-flex align-items-center">
-                                        <input class="form_box-form--input" type="radio" name="logement"
-                                            id="Maison"
+                                        <input class="form_box-form--input" type="radio" name="logement" id="Maison"
                                             style="height:1.8rem; width:1.8rem; display: inline; vertical-align: middle;">
                                         <label class="footer_content-link--a" for="Maison"
                                             style="margin-left: 1rem !important; margin-top: -.1rem; display: inline; vertical-align: middle;">Maison</label>
@@ -195,48 +227,41 @@
                                 </div>
                             </div>
                             <div class="col-md-12 my-3">
-                                <label for="demande" class="devis_form-label"></label>
+                                <label for="demande" class="footer_content-link--a">Quelle installation souhaitez-vous réaliser :</label>
                                 <select name="quelle-installation" id="quelle-installation" class="contact_form-input">
-                                    <option selected disabled>Quelle installation souhaitez-vous réaliser :</option>
-                                    <option value="Assainissement">Assainissement</option>
-                                    <option value="Fuite">Fuite</option>
-                                    <option value="Débouchage canalisation">Débouchage canalisation</option>
-                                    <option value="Curage">Curage</option>
-                                    <option value="Inspection Camera">Inspection Camera</option>
-                                    <option value="Pompage">Pompage</option>
-                                    <option value="Pompe de relevage">Pompe de relevage</option>
+                                    <option value="Chauffage">Chauffage</option>
+                                    <option value="Climatisation">Climatisation</option>
+                                    <option value="Eau chaude sanitaire">Eau chaude sanitaire</option>
                                 </select>
                             </div>
                             <div class="col-md-12 my-3">
+                                <label for="demande" class="footer_content-link--a">Type de chauffage déjà installé :</label>
                                 <select name="type-de-chauffage" id="type-de-chauffage" class="contact_form-input">
-                                    <option selected disabled>Type de chauffage déjà installé :</option>
-                                    <option value="Assainissement">Assainissement</option>
-                                    <option value="Fuite">Fuite</option>
-                                    <option value="Débouchage canalisation">Débouchage canalisation</option>
-                                    <option value="Curage">Curage</option>
-                                    <option value="Inspection Camera">Inspection Camera</option>
-                                    <option value="Pompage">Pompage</option>
-                                    <option value="Pompe de relevage">Pompe de relevage</option>
+                                    <option value="Electrique">Electrique</option>
+                                    <option value="Fioul">Fioul</option>
+                                    <option value="Gaz naturel">Gaz naturel</option>
+                                    <option value="GPL">GPL</option>
+                                    <option value="Pompe à chaleur">Pompe à chaleur</option>
+                                    <option value="Bois">Bois</option>
+                                    <option value="Charbon">Charbon</option>
                                 </select>
                             </div>
 
                             <div class="col-md-12 my-3">
+                                <label for="demande" class="footer_content-link--a">Dans quel délai</label>
                                 <select name="dans-quel-delai" id="dans-quel-delai" class="contact_form-input">
-                                    <option selected disabled>Dans quel délai</option>
-                                    <option value="Assainissement">Assainissement</option>
-                                    <option value="Fuite">Fuite</option>
-                                    <option value="Débouchage canalisation">Débouchage canalisation</option>
-                                    <option value="Curage">Curage</option>
-                                    <option value="Inspection Camera">Inspection Camera</option>
-                                    <option value="Pompage">Pompage</option>
-                                    <option value="Pompe de relevage">Pompe de relevage</option>
+                                    <option value="Immédiat">Immédiat</option>
+                                    <option value="D'ici 3 mois">D'ici 3 mois</option>
+                                    <option value="De 3 à 6 mois">De 3 à 6 mois</option>
+                                    <option value="Au delà de 6 mois">Au delà de 6 mois</option>
                                 </select>
                             </div>
 
                             <div class="col-md-12">
                                 <div class="form-group">
-                                    <textarea type="text" class="contact_form-input h-100" id="message"
-                                        name="message" placeholder="Informations complémentaire (facultatif)*" rows="5" required></textarea>
+                                    <textarea type="text" class="contact_form-input h-100" id="message" name="message"
+                                        placeholder="Informations complémentaire (facultatif)*" rows="5"
+                                        required></textarea>
                                 </div>
                             </div>
                         </div>
@@ -254,7 +279,8 @@
                             <i class="fa fa-info-square" aria-hidden="true"></i>
                         </div>
                         <div class="d-flex justify-content-center mt-4">
-                            <button type="submit" class="button form-submit contact_form-button" >ENVOYER &nbsp; <i class="fas fa-arrow-right"></i></button>
+                            <button type="submit" class="button form-submit contact_form-button">ENVOYER &nbsp; <i
+                                    class="fas fa-arrow-right"></i></button>
                         </div>
                     </form>
                 </div>
@@ -288,7 +314,7 @@
         <div class="col-md-11 max-100">
             <div class="footer_bg">
                 <div class="row">
-                    <div class="col-md-6">
+                    <div class="col-md-3">
                         <div class="footer_content">
                             <h3 class="footer_content-title">Contactez-nous</h3>
                             <div class="footer_content-link">
@@ -330,20 +356,31 @@
                     </div>
                     <div class="col-md-3">
                         <div class="footer_content">
-                            <h3 class="footer_content-title">Nos services</h3>
+                            <h3 class="footer_content-title">Autres Lines</h3>
                             <div class="footer_content-link2">
                                 <a href="./index.html" class="footer_content-link--a my-2">Accueil</a>
-                                <a href="./pompe-a-chaleur.html" class="footer_content-link--a my-2">Klimat</a>
-                                <a href="" class="footer_content-link--a my-2">Installation</a>
-                                <a href="" class="footer_content-link--a my-2">Entretien</a>
-                                <a href="" class="footer_content-link--a my-2">S.A.V</a>
-                                <a href="" class="footer_content-link--a my-2">Nos produits</a>
-                                <a href="" class="footer_content-link--a my-2">Climatisation réversible </a>
-                                <a href="" class="footer_content-link--a my-2">PAC Air EAU</a>
-                                <a href="" class="footer_content-link--a my-2">Ballon thermo</a>
+                                <a href="" class="footer_content-link--a my-2">Klimat</a>
                                 <a href="" class="footer_content-link--a my-2">Nos réalisations</a>
                                 <a href="" class="footer_content-link--a my-2">Les aides</a>
                                 <a href="./contact.html" class="footer_content-link--a my-2">Contact</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="footer_content">
+                            <h3 class="footer_content-title">Nos prestations</h3>
+                            <div class="footer_content-link2">
+                                <a href="" class="footer_content-link--a my-2">Installation</a>
+                                <a href="" class="footer_content-link--a my-2">Entretien</a>
+                                <a href="" class="footer_content-link--a my-2">S.A.V</a>
+                            </div>
+                        </div>
+                        <div class="footer_content mt-5">
+                            <h3 class="footer_content-title">Nos produits</h3>
+                            <div class="footer_content-link2">
+                                <a class="footer_content-link--a my-2" href="./climatisation.html">Climatisation réversible (monosplit & multisplit, gainable, VRV)</a>
+                                <a class="footer_content-link--a my-2" href="./pompe-a-chaleur.html">Pompe à chaleur Air/Eau</a>
+                                <a class="footer_content-link--a my-2" href="">Ballon thermodynamique</a>
                             </div>
                         </div>
                     </div>
