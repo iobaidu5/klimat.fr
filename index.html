@@ -23,6 +23,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
     integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
     crossorigin="anonymous"></script>
+
+
     <title>Page d'accueil</title>
 <meta property="og:title" content="Page d'accueil" />
 <meta property="og:locale" content="fr_FR" />
@@ -49,7 +51,7 @@
     <nav class="navbar Navbar_main navbar-expand-lg fixedNav">
         <div class="container-fluid">
             <div class="Navbar_image">
-                <a href="./index.html" title="Accueil"><img loading="lazy" src="./assets/img/logo.png"
+                <a href="./index.html" title="Accueil"><img loading="lazy"  loading="lazy" src="./assets/img/logo.png"
                         class="Navbar_image-img" alt="Ardent poêle" /></a>
             </div>
             <button class="navbar-toggler Navbar_toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
@@ -70,7 +72,7 @@
                     <li class="nav-item dropdown Navbar_nav-item">
                         <a class="nav-link  Navbar_nav-link  dropdown-toggle  d-flex align-items-center"
                             href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
-                            aria-expanded="false">Nos préstation
+                            aria-expanded="false">Nos prestations
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <a class="dropdown-item  Navbar_nav-link "
@@ -88,18 +90,20 @@
                             aria-expanded="false">Nos produits
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item  Navbar_nav-link2 "
+                            href="./nos-produits.html">Nos produits</a>
                             <a class="dropdown-item  Navbar_nav-link "
                                 href="./climatisation.html">Climatisation réversible (monosplit & multisplit,
                                 gainable, VRV)</a>
                             <a class="dropdown-item  Navbar_nav-link "
                                 href="./pompe-a-chaleur.html">Pompe à chaleur Air/Eau</a>
                             <a class="dropdown-item  Navbar_nav-link "
-                                href="">Ballon thermodynamique</a>
+                                href="./chauffe-eau.html">Ballon thermodynamique</a>
 
                             <!-- <a class="dropdown-item  Navbar_nav-link "
-                                href="/chauffe-eau">Chauffe-eau</a>
+                                href="./chauffe-eau.html">Chauffe-eau</a>
                             <a class="dropdown-item  Navbar_nav-link "
-                                href="/nos-produits">Nos produits</a> -->
+                                href="./nos-produits.html">Nos produits</a> -->
 
                         </div>
                     </li>
@@ -134,7 +138,7 @@
                             <div>
                                 <li class="nav-item Navbar_nav-item">
                                     <div class="Navbar_nav-image">
-                                        <img src="./assets/img/rge.png" alt="RGE" class="Navbar_nav-image--img">
+                                        <img loading="lazy"  src="./assets/img/rge.png" alt="RGE" class="Navbar_nav-image--img">
                                     </div>
                                 </li>
                             </div>
@@ -147,11 +151,11 @@
 </section>
 
     
-        <section class="slider">
-    <div class="container-fluid">
+        <section class="slider video-slider">
+    <!-- <div class="container-fluid">
         <div class="slider_bg">
             <div class="row justify-content-center">
-                <div class="col-lg-6 m-0 p-0">
+                <div class="col-lg-12 m-0 p-0">
                     <div class="slider_content">
                         <div class="slider_content-inner">
                             <h1 class="slider_content-title">Spécialiste de la pompe à chaleur en Essonne</h1>
@@ -160,36 +164,41 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6 m-0 p-0">
-                    <div class="slider_images">
-                        <div class="slider_images-image-1">
-                            <img src="./assets/img/s1.png" alt="" class="slider_images-image--img1">
-                        </div>
-                        <div class="slider_images-image">
+            </div>
+        </div>
+    </div> -->
+    <!-- <div class="video-background">
+        <div class="video-foreground">
+          <iframe src="https://www.youtube.com/embed/rWydEGpEGCU?controls=0&showinfo=0&rel=0&autoplay=1&loop=1&mute=1" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div class="slider_content">
+            <div class="slider_content-inner">
+                <h1 class="slider_content-title">Spécialiste de la pompe à chaleur en Essonne</h1>
+                <p class="slider_content-p">Votre devis gratuit en 2 min</p>
+                <a href="./devis.html" class="slider_content-link">Demandez votre devis</a>
+            </div>
+        </div>
+      </div> -->
+</section>
 
-                            <div class="video-wrapper">
-                                <div class="video-container" id="video-container">
-                                    <video controls id="video" preload="metadata" poster="./assets/img/s2.png">
-                                        <source src="./assets/img/slider-vid.mp4" type="video/mp4">
-                                    </video>
-                            
-                                    <div class="play-button-wrapper">
-                                        <div title="Play video" class="play-gif" id="circle-play-b">
-                                            <!-- SVG Play Button -->
-                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80">
-                                                <path d="M40 0a40 40 0 1040 40A40 40 0 0040 0zM26 61.56V18.44L64 40z" />
-                                            </svg>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+<div class="header">
+    <div data-video="rWydEGpEGCU" class="header__video js-background-video">
+        <div class="header__background">
+            <div id="yt-player"></div>
+        </div>
+    </div>
+    <div class="header__video-overlay js-video-overlay"
+        style="background-image: url('https://img.youtube.com/vi/rWydEGpEGCU/maxresdefault.jpg');"></div>
+    <div class="slider_content">
+        <div class="container">
+            <div class="slider_content-inner">
+                <h1 class="slider_content-title">Spécialiste de la pompe à chaleur en Essonne</h1>
+                <p class="slider_content-p">Votre devis gratuit en 2 min</p>
+                <a href="./devis.html" class="slider_content-link">Demandez votre devis</a>
             </div>
         </div>
     </div>
-</section>
+</div>
     
 
     <div class="">
@@ -200,19 +209,19 @@
         </div>
         <div class="partners_images owl-carousel" id="owl">
             <div class="partners_images-image">
-                <img src="./assets/img/p1.png" alt="" class="partners_images-image--img">
+                <img loading="lazy"  src="./assets/img/p3.png" alt="" class="partners_images-image--img">
             </div>
             <div class="partners_images-image">
-                <img src="./assets/img/p2.png" alt="" class="partners_images-image--img">
+                <img loading="lazy"  src="./assets/img/p3.png" alt="" class="partners_images-image--img">
             </div>
             <div class="partners_images-image">
-                <img src="./assets/img/p3.png" alt="" class="partners_images-image--img">
+                <img loading="lazy"  src="./assets/img/p3.png" alt="" class="partners_images-image--img">
             </div>
             <div class="partners_images-image">
-                <img src="./assets/img/p4.png" alt="" class="partners_images-image--img">
+                <img loading="lazy"  src="./assets/img/p3.png" alt="" class="partners_images-image--img">
             </div>
             <div class="partners_images-image">
-                <img src="./assets/img/p5.png" alt="" class="partners_images-image--img">
+                <img loading="lazy"  src="./assets/img/p3.png" alt="" class="partners_images-image--img">
             </div>
         </div>
     </div>
@@ -223,7 +232,7 @@
             <div class="col-lg-4 col-md-6">
                 <div class="boxes_content">
                     <div class="boxes_content-image">
-                        <img src="./assets/img/b1.png" alt="" class="boxes_content-image--img">
+                        <img loading="lazy"  src="./assets/img/b1.png" alt="" class="boxes_content-image--img">
                     </div>
                     <h3 class="boxes_content-title">Pompe à chaleur en Essonne</h3>
                     <p class="boxes_content-p"><strong>Nous vous proposons plusieurs modèles de pompe à chaleur que nous
@@ -232,32 +241,32 @@
                         Ile-de-France.
                         Nous vous conseillerons sur un modèle qui répondra parfaitement à votre besoin tout en
                         respectant votre budget.</p>
-                    <a href="" class="boxes_content-link mt-3">PLUS D’INFOS</a>
+                    <a href="./pompe-a-chaleur.html" class="boxes_content-link mt-3">PLUS D’INFOS</a>
                 </div>
             </div>
             <div class="col-lg-4 col-md-6">
                 <div class="boxes_content">
                     <div class="boxes_content-image">
-                        <img src="./assets/img/b2.png" alt="" class="boxes_content-image--img">
+                        <img loading="lazy"  src="./assets/img/b2.png" alt="" class="boxes_content-image--img">
                     </div>
                     <h3 class="boxes_content-title">Climatisation</h3>
                     <p class="boxes_content-p">Toutes nos climatisations sont réversibles. Nous avons des produits
                         adaptés à chaque demande et à chaque surface. Que vous soyez un particulier ou un professionnel
                         en Essonne, notre équipe est à votre disposition pour répondre à toutes vos demandes,
                         contactez-nous !</p>
-                    <a href="" class="boxes_content-link m-t-5">PLUS D’INFOS</a>
+                    <a href="./climatisation.html" class="boxes_content-link m-t-5">PLUS D’INFOS</a>
                 </div>
             </div>
             <div class="col-lg-4 col-md-12">
                 <div class="boxes_content">
                     <div class="boxes_content-image">
-                        <img src="./assets/img/b3.png" alt="" class="boxes_content-image--img">
+                        <img loading="lazy"  src="./assets/img/b3.png" alt="" class="boxes_content-image--img">
                     </div>
                     <h3 class="boxes_content-title">Chauffe-eau thermodynamique</h3>
                     <p class="boxes_content-p">Nos chauffe-eau thermodynamiques sont des produits innovants et de
                         qualité qui vous assureront une production d’eau chaude sanitaire de la plus haute qualité. Pour
                         une demande d’information complémentaire, nous sommes disponibles au 01 85 53 74 38.</p>
-                    <a href="" class="boxes_content-link m-t-3">PLUS D’INFOS</a>
+                    <a href="./chauffe-eau.html" class="boxes_content-link m-t-3">PLUS D’INFOS</a>
                 </div>
             </div>
         </div>
@@ -299,7 +308,7 @@
         <div class="row align-items-center">
             <div class="col-md-6">
                 <div class="menu_image">
-                    <img src="./assets/img/m1.png" alt="" class="menu_image-img">
+                    <img loading="lazy"  src="./assets/img/m1.png" alt="" class="menu_image-img">
                 </div>
             </div>
             <div class="col-md-6">
@@ -326,9 +335,9 @@
                     74 38.</p>
             </div>
             <div class="maintanance_image">
-                <img src="./assets/img/decoration.png" alt="" class="maintanance_image-img3">
-                <img src="./assets/img/man.png" alt="" class="maintanance_image-img2">
-                <img src="./assets/img/circle.png" alt="" class="maintanance_image-img1">
+                <img loading="lazy"  src="./assets/img/decoration.png" alt="" class="maintanance_image-img3">
+                <img loading="lazy"  src="./assets/img/man.png" alt="" class="maintanance_image-img2">
+                <img loading="lazy"  src="./assets/img/circle.png" alt="" class="maintanance_image-img1">
             </div>
         </div>
     </div>
@@ -338,7 +347,7 @@
         <div class="row align-items-center">
             <div class="col-md-6">
                 <div class="menu_image">
-                    <img src="./assets/img/m2.png" alt="" class="menu_image-img">
+                    <img loading="lazy"  src="./assets/img/m2.png" alt="" class="menu_image-img">
                 </div>
             </div>
             <div class="col-md-6">
@@ -365,61 +374,61 @@
         <div class="row align-items-center justify-content-center">
             <div class="col-lg-3 col-md-6">
                 <div class="items_item">
-                    <img src="./assets/img/items/1.png" alt="" class="items_item-img">
+                    <img loading="lazy"  src="./assets/img/items/1.png" alt="" class="items_item-img">
                     <p class="items_item-p">Installation de pompe à chaleur</p>
                 </div>
             </div>
             <div class="col-lg-3 col-md-6">
                 <div class="items_item">
-                    <img src="./assets/img/items/2.png" alt="" class="items_item-img2">
+                    <img loading="lazy"  src="./assets/img/items/2.png" alt="" class="items_item-img2">
                     <p class="items_item-p">Installation de climatisation</p>
                 </div>
             </div>
             <div class="col-lg-3 col-md-6">
                 <div class="items_item">
-                    <img src="./assets/img/items/10.png" alt="" class="items_item-img3">
+                    <img loading="lazy"  src="./assets/img/items/10.png" alt="" class="items_item-img3">
                     <p class="items_item-p">Pose de Chauffe-eau</p>
                 </div>
             </div>
             <div class="col-lg-3 col-md-6">
                 <div class="items_item">
-                    <img src="./assets/img/items/4.png" alt="" class="items_item-img4">
+                    <img loading="lazy"  src="./assets/img/items/4.png" alt="" class="items_item-img4">
                     <p class="items_item-p">Maintenance de vos équipements</p>
                 </div>
             </div>
             <div class="col-lg-3 col-md-6">
                 <div class="items_item">
-                    <img src="./assets/img/items/5.png" alt="" class="items_item-img">
+                    <img loading="lazy"  src="./assets/img/items/5.png" alt="" class="items_item-img">
                     <p class="items_item-p">Mise aux normes</p>
                 </div>
             </div>
             <div class="col-lg-3 col-md-6">
                 <div class="items_item">
-                    <img src="./assets/img/items/3.png" alt="" class="items_item-img5">
+                    <img loading="lazy"  src="./assets/img/items/3.png" alt="" class="items_item-img5">
                     <p class="items_item-p">Réparation</p>
                 </div>
             </div>
             <div class="col-lg-3 col-md-6">
                 <div class="items_item">
-                    <img src="./assets/img/items/6.png" alt="" class="items_item-img6">
+                    <img loading="lazy"  src="./assets/img/items/6.png" alt="" class="items_item-img6">
                     <p class="items_item-p">Remplacement de pièce</p>
                 </div>
             </div>
             <div class="col-lg-3 col-md-6">
                 <div class="items_item">
-                    <img src="./assets/img/items/7.png" alt="" class="items_item-img7">
+                    <img loading="lazy"  src="./assets/img/items/7.png" alt="" class="items_item-img7">
                     <p class="items_item-p">Vérification de vos installations</p>
                 </div>
             </div>
             <div class="col-lg-3 col-md-6">
                 <div class="items_item">
-                    <img src="./assets/img/items/8.png" alt="" class="items_item-img8">
+                    <img loading="lazy"  src="./assets/img/items/8.png" alt="" class="items_item-img8">
                     <p class="items_item-p">Déplacement offert</p>
                 </div>
             </div>
             <div class="col-lg-3 col-md-6">
                 <div class="items_item">
-                    <img src="./assets/img/items/9.png" alt="" class="items_item-img">
+                    <img loading="lazy"  src="./assets/img/items/9.png" alt="" class="items_item-img">
                     <p class="items_item-p">Devis gratuit</p>
                 </div>
             </div>
@@ -1568,7 +1577,7 @@
         <div class="row align-items-center">
             <div class="col-md-6">
                 <div class="menu_image">
-                    <img src="./assets/img/m3.png" alt="" class="menu_image-img2">
+                    <img loading="lazy"  src="./assets/img/m3.png" alt="" class="menu_image-img2">
                 </div>
             </div>
             <div class="col-md-6">
@@ -1638,7 +1647,7 @@
     <div class="fixphone">
       <a href="tel:01 85 53 74 38" title="01 85 53 74 38" class="button one phoneone"><i class="fas fa-phone-alt"></i> &nbsp;01 85 53 74 38</a>
       <div class="Navbar_nav-image d-flex justify-content-center mx-auto w-100 mt-0 mb-5">
-        <img src="./assets/img/rge.png" alt="RGE" class="Navbar_nav-image--img">
+        <img loading="lazy"  src="./assets/img/rge.png" alt="RGE" class="Navbar_nav-image--img">
     </div>
     </div>
     <footer class="footer">
@@ -1701,7 +1710,7 @@
                     </div>
                     <div class="col-md-3">
                         <div class="footer_content">
-                            <h3 class="footer_content-title">Autres Lines</h3>
+                            <h3 class="footer_content-title">Autres liens</h3>
                             <div class="footer_content-link2">
                                 <a href="./index.html" class="footer_content-link--a my-2">Accueil</a>
                                 <a href="" class="footer_content-link--a my-2">Klimat</a>
@@ -1725,7 +1734,7 @@
                             <div class="footer_content-link2">
                                 <a class="footer_content-link--a my-2" href="./climatisation.html">Climatisation réversible (monosplit & multisplit, gainable, VRV)</a>
                                 <a class="footer_content-link--a my-2" href="./pompe-a-chaleur.html">Pompe à chaleur Air/Eau</a>
-                                <a class="footer_content-link--a my-2" href="">Ballon thermodynamique</a>
+                                <a class="footer_content-link--a my-2" href="./chauffe-eau.html">Ballon thermodynamique</a>
                             </div>
                         </div>
                     </div>
@@ -1733,12 +1742,12 @@
                         <div class="footer_content">
                             <h3 class="footer_content-title">Zones d’interventions </h3>
                             <div class="footer_content-link2">
-                                <a href="./pompe-a-chaleur-77.html" class="footer_content-link--a my-2">Pompe à chaleur 77</a>
-                                <a href="./climatisation-91.html" class="footer_content-link--a my-2">Climatisation 91</a>
-                                <a href="./installateur-pompe-a-chaleur-essonne.html" class="footer_content-link--a my-2">Installateur pompe à chaleur Essonne</a>
-                                <a href="./installateur-pompe-a-chaleur-91.html" class="footer_content-link--a my-2">Installateur pompe à chaleur 91</a>
-                                <a href="./installateur-climatisation-daikin.html" class="footer_content-link--a my-2">Installateur climatisation Daikin</a>
-                                <a href="./installateur-pompe-a-chaleur-daikin.html" class="footer_content-link--a my-2">Installateur pompe à chaleur Daikin</a>
+                                <a href="pompe-a-chaleur-77.html" class="footer_content-link--a my-2">Pompe à chaleur 77</a>
+                                <a href="climatisation-91.html" class="footer_content-link--a my-2">Climatisation 91</a>
+                                <a href="installateur-pompe-a-chaleur-essonne.html" class="footer_content-link--a my-2">Installateur pompe à chaleur Essonne</a>
+                                <a href="installateur-pompe-a-chaleur-91.html" class="footer_content-link--a my-2">Installateur pompe à chaleur 91</a>
+                                <a href="installateur-climatisation-daikin.html" class="footer_content-link--a my-2">Installateur climatisation Daikin</a>
+                                <a href="installateur-pompe-a-chaleur-daikin.html" class="footer_content-link--a my-2">Installateur pompe à chaleur Daikin</a>
                             </div>
                         </div>
                     </div>
@@ -1749,7 +1758,7 @@
     <div class="footer_bottom">
         <a href="https://www.bhinternet.fr/" target="_blank" class="footer_bottom-link">BHInternet - Création site internet entreprise</a>
         <a href="" class="footer_bottom-link">&nbsp; | 2023 | &nbsp;</a>
-        <a href="./mentions-legales.html" class="footer_bottom-link">Mentions légales</a>
+        <a href="mentions-legales.html" class="footer_bottom-link">Mentions légales</a>
     </div>
 </footer>
 
