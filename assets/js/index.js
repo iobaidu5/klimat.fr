@@ -1,11 +1,4 @@
-$(document).ready(function () {
-    $("li.active").removeClass("active");
-    $('a[href="' + location.pathname + '"]')
-      .closest("li")
-      .addClass("active");
-  });
 
-  
 // YouTube Player API for header BG video
 
 // Insert the <script> tag targeting the iframe API
@@ -235,3 +228,11 @@ $('.counter-count').each(function () {
 
 // script.js
 
+
+
+$(document).ready(function () {
+  $("li.active").removeClass("active");
+  $('a[href="' + location.pathname + '"]')
+    .closest("li")
+    .addClass("active");
+});
