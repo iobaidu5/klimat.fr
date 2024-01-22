@@ -111,6 +111,7 @@ function onPlayerStateChange(event) {
     autoplayTimeout: 5000,
     autoplayHoverPause: false,
     dots: false,
+    nav: false,
     animateIn: "fadeIn",
     animateOut: "fadeOut",
     navText: [
@@ -119,12 +120,16 @@ function onPlayerStateChange(event) {
     ],
     responsiveClass: true,
     responsive: {
+      100: {
+        items: 2,
+        nav: true,
+      },
       400: {
-        items: 1,
+        items: 2,
         nav: true,
       },
       768: {
-        items: 2,
+        items: 3,
         nav: true,
       },
       1200: {
@@ -164,6 +169,10 @@ function onPlayerStateChange(event) {
     ],
     responsiveClass: true,
     responsive: {
+      100: {
+        items: 1,
+        nav: true,
+      },
       400: {
         items: 1,
         nav: true,
