@@ -1,4 +1,11 @@
+$(document).ready(function () {
+    $("li.active").removeClass("active");
+    $('a[href="' + location.pathname + '"]')
+      .closest("li")
+      .addClass("active");
+  });
 
+  
 // YouTube Player API for header BG video
 
 // Insert the <script> tag targeting the iframe API
@@ -108,8 +115,8 @@ function onPlayerStateChange(event) {
     animateIn: "fadeIn",
     animateOut: "fadeOut",
     navText: [
-      "<i class='fal fa-caret-left owlNav'></i>",
-      "<i class='fal fa-caret-right owlNav'></i>",
+      "",
+      "",
     ],
     responsiveClass: true,
     responsive: {
@@ -228,11 +235,3 @@ $('.counter-count').each(function () {
 
 // script.js
 
-
-
-$(document).ready(function () {
-  $("li.active").removeClass("active");
-  $('a[href="' + location.pathname + '"]')
-    .closest("li")
-    .addClass("active");
-});
