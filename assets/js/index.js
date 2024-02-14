@@ -121,11 +121,11 @@ function onPlayerStateChange(event) {
     responsiveClass: true,
     responsive: {
       100: {
-        items: 2,
+        items: 1,
         nav: true,
       },
       400: {
-        items: 2,
+        items: 1,
         nav: true,
       },
       768: {
@@ -133,11 +133,11 @@ function onPlayerStateChange(event) {
         nav: true,
       },
       1200: {
-        items: 4,
+        items: 3,
         nav: false,
       },
       1600: {
-        items: 5,
+        items: 3,
         nav: true,
         loop: false,
       },
