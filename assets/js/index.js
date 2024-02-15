@@ -31,12 +31,11 @@ const playerOptions = {
   disablekb: 1, 
   enablejsapi: 1, 
   iv_load_policy: 3,
-  // For looping video you have to have loop to 1
-  // And playlist value equal to your currently playing video
   loop: 1,
   playlist: bgVideoID,
   
 }
+
 
 // Get the video overlay, to mask it when the video is loaded
 const videoOverlay = document.querySelector('.js-video-overlay');
@@ -45,9 +44,13 @@ const videoOverlay = document.querySelector('.js-video-overlay');
 // after the API code downloads.
 let ytPlayer;
 function onYouTubeIframeAPIReady() {
+  // Set initial dimensions based on the viewport size
+  const playerWidth = window.innerWidth; // Set width to 100%
+  const playerHeight = window.innerHeight + 'vh'; // Set height to viewport height
+
   ytPlayer = new YT.Player('yt-player', {
-    width: '1280',
-    height: '720',
+    width: playerWidth,
+    height: playerHeight,
     videoId: bgVideoID,
     playerVars: playerOptions,
     events: {
@@ -55,7 +58,15 @@ function onYouTubeIframeAPIReady() {
       'onStateChange': onPlayerStateChange
     }
   });
+
+  // Adjust player size when window is resized
+  window.addEventListener('resize', function() {
+    const newPlayerHeight = window.innerHeight + 'vh';
+    ytPlayer.setSize(playerWidth, newPlayerHeight);
+  });
 }
+
+
 
 // The API will call this function when the video player is ready.
 function onPlayerReady(event) {

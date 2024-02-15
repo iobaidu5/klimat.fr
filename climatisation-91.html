@@ -18,8 +18,8 @@
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="icon" href="./assets/img/favicon.ico" type="image/x-icon" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script defer src="/assets/js/popper.min.js"></script>
-    <script defer src="/assets/js/bootstrap.min.js"></script>
+    <script defer src="./assets/js/popper.min.js"></script>
+    <script defer src="./assets/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
     integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
     crossorigin="anonymous"></script>
@@ -47,7 +47,9 @@
 </head>
 
   <body>
-    <section class="Navbar navbar-main fixedNav">
+
+    
+      <section class="Navbar navbar-main fixedNav">
     <nav class="navbar Navbar_main navbar-expand-lg fixedNav">
         <div class="container-fluid">
             <div class="Navbar_image">
@@ -59,97 +61,97 @@
                 <i class="fa fa-bars toggle-button Navbar_toggler-icon" aria-hidden="true"></i>
             </button>
             <div class="collapse navbar-collapse Navbar_nav-collapse" id="navbarNav">
-                <ul class="navbar-nav Navbar_nav w-100">
-                    <li class="nav-item Navbar_nav-item">
-                        <a class="nav-link  Navbar_nav-link2 "
-                            title="Accueil" href="./index.html"> Accueil</a>
-                    </li>
-                    <li class="nav-item Navbar_nav-item ">
-                        <a class="nav-link  Navbar_nav-link2 "
-                            title="Klimat" href="">
-                            Klimat</a>
-                    </li>
-                    <li class="nav-item dropdown Navbar_nav-item">
-                        <a class="nav-link  Navbar_nav-link2  dropdown-toggle  d-flex align-items-center"
-                            href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
-                            aria-expanded="false">Nos prestations
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item  Navbar_nav-link2 "
-                                href="./installation.html">Installations</a>
-                            <a class="dropdown-item  Navbar_nav-link2 "
-                                href="./entretiens.html">Entretien</a>
-                            <a class="dropdown-item  Navbar_nav-link2 "
-                                href="./sav.html">S.A.V</a>
+                <div class="dflex2">
+                    <div>
+                        <ul class="navbar-nav Navbar_nav w-100">
+                            <li class="nav-item Navbar_nav-item">
+                                <a class="nav-link  Navbar_nav-link2 "
+                                    title="Accueil" href="./index.html"> Accueil</a>
+                            </li>
+                            <li class="nav-item Navbar_nav-item ">
+                                <a class="nav-link  Navbar_nav-link2 "
+                                    title="Klimat" href="">
+                                    Klimat</a>
+                            </li>
+                            <li class="nav-item dropdown Navbar_nav-item">
+                                <a class="nav-link  Navbar_nav-link2  dropdown-toggle  d-flex align-items-center"
+                                    href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+                                    aria-expanded="false">Nos prestations
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item  Navbar_nav-link2 "
+                                        href="./installation.html">Installations</a>
+                                    <a class="dropdown-item  Navbar_nav-link2 "
+                                        href="./entretiens.html">Entretien</a>
+                                    <a class="dropdown-item  Navbar_nav-link2 "
+                                        href="./sav.html">S.A.V</a>
+                                </div>
+                            </li>
+        
+                            <li class="nav-item dropdown Navbar_nav-item">
+                                <a class="nav-link  Navbar_nav-link2  dropdown-toggle  d-flex align-items-center"
+                                    href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+                                    aria-expanded="false">Nos produits
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item  Navbar_nav-link2 "
+                                    href="./nos-produits.html">Nos produits</a>
+                                    <a class="dropdown-item  Navbar_nav-link2 "
+                                        href="./climatisation.html">Climatisation réversible (monosplit & multisplit,
+                                        gainable, VRV)</a>
+                                    <a class="dropdown-item  Navbar_nav-link2 "
+                                        href="./pompe-a-chaleur.html">Pompe à chaleur Air/Eau</a>
+                                    <a class="dropdown-item  Navbar_nav-link2 "
+                                        href="./chauffe-eau.html">Ballon thermodynamique</a>
+        
+                                    <!-- <a class="dropdown-item  Navbar_nav-link2 "
+                                        href="./chauffe-eau.html">Chauffe-eau</a>
+                                    <a class="dropdown-item  Navbar_nav-link2 "
+                                        href="./nos-produits.html">Nos produits</a> -->
+        
+                                </div>
+                            </li>
+        
+                            <li class="nav-item Navbar_nav-item">
+                                <a class="nav-link  Navbar_nav-link2 "
+                                    title="Nos réalisations" href="">
+                                    Nos réalisations </a>
+                            </li>
+        
+                            <li class="nav-item Navbar_nav-item">
+                                <a class="nav-link  Navbar_nav-link2 "
+                                    title="Les aides" href="">
+                                    Les aides </a>
+                            </li>
+        
+                            <li class="nav-item Navbar_nav-item">
+                                <a class="nav-link  Navbar_nav-link2 "
+                                    title="Contact" href="./contact.html">
+                                    Contact </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="w-100 dflex to-be-white">
+                        <div>
+                            <li class="nav-item Navbar_nav-item">
+                                <a class="nav-link Navbar_nav-btn text-black" title="Devis en ligne"
+                                    href="./devis.html">Devis
+                                    en ligne</a>
+                            </li>
                         </div>
-                    </li>
-
-                    <li class="nav-item dropdown Navbar_nav-item">
-                        <a class="nav-link  Navbar_nav-link2  dropdown-toggle  d-flex align-items-center"
-                            href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
-                            aria-expanded="false">Nos produits
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item  Navbar_nav-link2 "
-                            href="./nos-produits.html">Nos produits</a>
-                            <a class="dropdown-item  Navbar_nav-link2 "
-                                href="./climatisation.html">Climatisation réversible (monosplit & multisplit,
-                                gainable, VRV)</a>
-                            <a class="dropdown-item  Navbar_nav-link2 "
-                                href="./pompe-a-chaleur.html">Pompe à chaleur Air/Eau</a>
-                            <a class="dropdown-item  Navbar_nav-link2 "
-                                href="./chauffe-eau.html">Ballon thermodynamique</a>
-
-                            <!-- <a class="dropdown-item  Navbar_nav-link2 "
-                                href="./chauffe-eau.html">Chauffe-eau</a>
-                            <a class="dropdown-item  Navbar_nav-link2 "
-                                href="./nos-produits.html">Nos produits</a> -->
-
-                        </div>
-                    </li>
-
-                    <li class="nav-item Navbar_nav-item">
-                        <a class="nav-link  Navbar_nav-link2 "
-                            title="Nos réalisations" href="">
-                            Nos réalisations </a>
-                    </li>
-
-                    <li class="nav-item Navbar_nav-item">
-                        <a class="nav-link  Navbar_nav-link2 "
-                            title="Les aides" href="">
-                            Les aides </a>
-                    </li>
-
-                    <li class="nav-item Navbar_nav-item">
-                        <a class="nav-link  Navbar_nav-link2 "
-                            title="Contact" href="./contact.html">
-                            Contact </a>
-                    </li>
-
-                    <div class="ml-auto w-100">
-                        <div class="w-100 dflex">
-                            <div>
-                                <li class="nav-item Navbar_nav-item align-items-end">
-                                    <a class="nav-link Navbar_nav-btn" title="Devis en ligne"
-                                        href="./devis.html">Devis
-                                        en ligne</a>
-                                </li>
-                            </div>
-                            <div>
-                                <li class="nav-item Navbar_nav-item">
-                                    <div class="Navbar_nav-image">
-                                        <img loading="lazy"  src="./assets/img/rge.png" alt="RGE" class="Navbar_nav-image--img">
-                                    </div>
-                                </li>
-                            </div>
+                        <div>
+                            <li class="nav-item Navbar_nav-item">
+                                <div class="Navbar_nav-image">
+                                    <img loading="lazy"  src="./assets/img/rge.png" alt="RGE" class="Navbar_nav-image--img">
+                                </div>
+                            </li>
                         </div>
                     </div>
-                </ul>
+                </div>
             </div>
         </div>
     </nav>
 </section>
-
     
 
     <div class="">
