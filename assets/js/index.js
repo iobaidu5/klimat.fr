@@ -5,6 +5,25 @@ $(document).ready(function () {
       .addClass("active");
   });
 
+  // Function to add title attribute to all <a> tags
+function addTitleToLinks() {
+  // Get all <a> elements on the page
+  var links = document.querySelectorAll('a');
+
+  // Loop through each <a> element
+  links.forEach(function(link) {
+      // Get the inner text of the <a> element
+      var linkText = link.textContent;
+
+      // Set the title attribute to the inner text
+      link.setAttribute('title', linkText);
+  });
+}
+
+// Call the function
+addTitleToLinks();
+
+
 
 
   const nav = document.querySelector(".Navbar");
