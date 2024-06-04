@@ -19,53 +19,65 @@ $(document).ready(function () {
     }
   }
   
-  var owl = $("#owl");
-  owl.owlCarousel({
-    items: 5,
-    navigation: false,
-    loop: true,
-    autoplay: true,
-    margin: 20,
-    autoplayTimeout: 5000,
-    autoplayHoverPause: false,
-    dots: false,
-    nav: false,
-    animateIn: "fadeIn",
-    animateOut: "fadeOut",
-    navText: [
-      "",
-      "",
-    ],
-    responsiveClass: true,
-    responsive: {
-      100: {
-        items: 1,
-        nav: true,
+  $(document).ready(function() {
+    var owl = $("#owl");
+    owl.owlCarousel({
+      items: 5,
+      navigation: false,
+      loop: true,
+      autoplay: true,
+      margin: 20,
+      autoplayTimeout: 5000,
+      autoplayHoverPause: false,
+      dots: false,
+      nav: false,
+      responsiveClass: true,
+      responsive: {
+        100: {
+          items: 1,
+          nav: true,
+        },
+        400: {
+          items: 1,
+          nav: true,
+        },
+        768: {
+          items: 3,
+          nav: true,
+        },
+        1200: {
+          items: 3,
+          nav: false,
+        },
+        1600: {
+          items: 5,
+          nav: true,
+          loop: false,
+        },
       },
-      400: {
-        items: 1,
-        nav: true,
-      },
-      768: {
-        items: 3,
-        nav: true,
-      },
-      1200: {
-        items: 3,
-        nav: false,
-      },
-      1600: {
-        items: 5,
-        nav: true,
-        loop: false,
-      },
-    },
-  });
-  $(".play").on("click", function () {
-    owl.trigger("play.owl.autoplay", [5000]);
-  });
-  $(".stop").on("click", function () {
-    owl.trigger("stop.owl.autoplay");
+      onInitialized: addZoomClass,
+      onTranslated: addZoomClass,
+    });
+
+    function addZoomClass(event) {
+      var items = event.item.count; // Total items
+      var item = event.item.index; // Current item index
+      var middleItemIndex = item + Math.floor(event.page.size / 2);
+
+      // Remove the class from all items
+      $('.owl-item').removeClass('center');
+
+      // Add the class to the center item
+      $('.owl-item').eq(middleItemIndex).addClass('center');
+    }
+
+    $(".play").on("click", function () {
+      owl.trigger("play.owl.autoplay", [5000]);
+    });
+
+    $(".stop").on("click", function () {
+      owl.trigger("stop.owl.autoplay");
+    });
   });
 
 

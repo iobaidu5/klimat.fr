@@ -15,15 +15,16 @@
         href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
         integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
         crossorigin="anonymous" />
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <link rel="icon" href="./assets/img/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="icon" href="/assets/img/favicon.ico" type="image/x-icon" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script defer src="./assets/js/popper.min.js"></script>
-    <script defer src="./assets/js/bootstrap.min.js"></script>
+    <script defer src="/assets/js/popper.min.js"></script>
+    <script defer src="/assets/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
     integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
     crossorigin="anonymous"></script>
 
+    <script> document.addEventListener("DOMContentLoaded", () => { document.querySelectorAll("img[src]").forEach(image => { const altText = generateAltText(image.getAttribute("src")); image.alt = altText; }); }); function generateAltText(src) { return src.split('/').pop().split('.')[0].replace(/[-\/_*]/g, ' '); } </script>
 
     <title>Page d'accueil</title>
 <meta property="og:title" content="Page d'accueil" />
@@ -50,86 +51,70 @@
 
     
         <section class="Navbar navbar-main fixedNav">
-    <nav class="navbar Navbar_main navbar-expand-lg fixedNav">
-        <div class="container-fluid">
-            <div class="Navbar_image">
-                <a href="./index.html" title="Accueil"><img loading="lazy" loading="lazy"
-                        src="./assets/img/new/logo.png" class="Navbar_image-img" alt="Ardent poêle" /></a>
-            </div>
-            <button class="navbar-toggler Navbar_toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <i class="fa fa-bars toggle-button Navbar_toggler-icon" aria-hidden="true"></i>
-            </button>
-            <div class="collapse navbar-collapse Navbar_nav-collapse to-be-center" id="navbarNav">
-                <div class="dflex2">
-                    <div>
-                        <ul class="navbar-nav Navbar_nav w-100">
-                            <li class="nav-item Navbar_nav-item">
-                                <a class="nav-link  Navbar_nav-link "
-                                    title="Accueil" href="./index.html"> Accueil</a>
-                            </li>
-                            <li class="nav-item Navbar_nav-item ">
-                                <a class="nav-link  Navbar_nav-link "
-                                    title="Qui sommes nous ?" href="./qui-sommes-nous.html">
-                                    Qui sommes nous ?</a>
-                            </li>
-                            <li class="nav-item dropdown Navbar_nav-item">
-                                <a class="nav-link  Navbar_nav-link  dropdown-toggle  d-flex align-items-center"
-                                    href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-                                    aria-haspopup="true" aria-expanded="false">Nos produits et services
-                                </a>
-                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <a class="dropdown-item  Navbar_nav-link2 "
-                                        href="./pompe-a-chaleur-air-eau.html">Pompe à chaleur air/eau</a>
-                                    <a class="dropdown-item  Navbar_nav-link2 "
-                                        href="./climatisation-reversible.html">climatisation 
-                                        reversible</a>
-                                    <a class="dropdown-item  Navbar_nav-link2 "
-                                        href="./chauffe-eau-thermodynamique.html">chauffe-eau 
-                                        thermodynamique</a>
-                                        <a class="dropdown-item  Navbar_nav-link2 "
-                                        href="./entretiens.html">Entretien SAV</a>
-                                </div>
-                            </li>
-
-                            <li class="nav-item Navbar_nav-item">
-                                <a class="nav-link  Navbar_nav-link2 "
-                                    title="Nos réalisations" href="./galerie.html">
-                                    Nos réalisations </a>
-                            </li>
-
-                            <li class="nav-item Navbar_nav-item">
-                                <a class="nav-link  Navbar_nav-link2 "
-                                    title="Les aides" href="./les-aides.html">
-                                    Les aides </a>
-                            </li>
-
-                            <li class="nav-item Navbar_nav-item">
-                                <a class="nav-link  Navbar_nav-link "
-                                    title="Contact" href="./contact.html">
-                                    Contact </a>
-                            </li>
-                            <li class="nav-item Navbar_nav-item">
-                              <a class="nav-link  Navbar_nav-link2 "
-                                  title="Contact" href="./devenir-franchise.html">
-                                  Devenir franchisé </a>
-                          </li>
-                        </ul>
-                    </div>
-                    <div class="w-100 dflex to-be-white">
-                        <div>
-                            <li class="nav-item Navbar_nav-item">
-                                <a class="nav-link Navbar_nav-btn" title="Devis en ligne"
-                                    href="./devis.html">Devis
-                                    en ligne</a>
-                            </li>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </nav>
+  <nav class="navbar Navbar_main navbar-expand-lg fixedNav">
+      <div class="container-fluid">
+          <div class="Navbar_image">
+              <a href="./index.html" title="Accueil"><img loading="lazy" src="./assets/img/new/logo.png" class="Navbar_image-img" alt="Logo" /></a>
+          </div>
+          <button class="navbar-toggler Navbar_toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <i class="fa fa-bars toggle-button Navbar_toggler-icon" aria-hidden="true"></i>
+          </button>
+          <div class="collapse navbar-collapse Navbar_nav-collapse" id="navbarNav">
+              <ul class="navbar-nav Navbar_nav w-100">
+                  <li class="nav-item Navbar_nav-item">
+                      <a class="nav-link  Navbar_nav-link "
+                          title="Accueil" href="./index.html"> Accueil</a>
+                  </li>
+                  <li class="nav-item Navbar_nav-item ">
+                      <a class="nav-link  Navbar_nav-link "
+                          title="Qui sommes nous ?" href="./qui-sommes-nous.html"> Qui sommes nous ?</a>
+                  </li>
+                  <li class="nav-item dropdown Navbar_nav-item">
+                      <a class="nav-link  Navbar_nav-link  dropdown-toggle d-flex align-items-center"
+                          href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                          aria-haspopup="true" aria-expanded="false">Nos produits et services
+                      </a>
+                      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <a class="py-3 dropdown-item  Navbar_nav-link2 "
+                              href="./pompe-a-chaleur-air-eau.html">Pompe à chaleur air/eau</a>
+                          <hr class="Navbar_nav-hr">
+                          <a class="py-3 dropdown-item  Navbar_nav-link2 "
+                              href="./climatisation-reversible.html">climatisation reversible</a>
+                          <hr class="Navbar_nav-hr">
+                          <a class="py-3 dropdown-item  Navbar_nav-link2 "
+                              href="./chauffe-eau-thermodynamique.html">chauffe-eau thermodynamique</a>
+                          <hr class="Navbar_nav-hr">
+                          <a class="py-3 dropdown-item  Navbar_nav-link2 "
+                              href="./entretiens.html">Entretien SAV</a>
+                          <hr class="Navbar_nav-hr">
+                      </div>
+                  </li>
+                  <li class="nav-item Navbar_nav-item">
+                      <a class="nav-link  Navbar_nav-link2 "
+                          title="Nos réalisations" href="./galerie.html"> Nos réalisations </a>
+                  </li>
+                  <li class="nav-item Navbar_nav-item">
+                      <a class="nav-link  Navbar_nav-link2 "
+                          title="Les aides" href="./les-aides.html"> Les aides </a>
+                  </li>
+                  <li class="nav-item Navbar_nav-item">
+                      <a class="nav-link  Navbar_nav-link "
+                          title="Contact" href="./contact.html"> Contact </a>
+                  </li>
+                  <li class="nav-item Navbar_nav-item">
+                      <a class="nav-link  Navbar_nav-link2 "
+                          title="Devenir franchisé" href="./devenir-franchise.html"> Devenir franchisé </a>
+                  </li>
+                  <li class="nav-item Navbar_nav-item">
+                      <a class="nav-link Navbar_nav-btn" title="Devis en ligne" href="./devis.html">Devis en ligne</a>
+                  </li>
+              </ul>
+          </div>
+      </div>
+  </nav>
 </section>
+
         
   <section class="slider-section">
     <video class="background-video" autoplay loop muted playsinline>
@@ -230,10 +215,10 @@
   </div>
 </section>
 
-<section class="boxes section">
+<section class="boxes section pt-0">
   <div class="container-fluid">
     <div class="row">
-      <div class="col-lg-3 col-md-6">
+      <div class="col-lg-3 col-md-6 my-4">
         <div class="boxes_content">
           <div class="boxes_content-image">
             <img loading="lazy" src="./assets/img/new/1.jpeg" alt="" class="boxes_content-image--img">
@@ -245,7 +230,7 @@
           <a href="./pompe-a-chaleur-air-eau.html" class="boxes_content-link my-3">PLUS D’INFOS</a>
         </div>
       </div>
-      <div class="col-lg-3 col-md-6">
+      <div class="col-lg-3 col-md-6 my-4">
         <div class="boxes_content">
           <div class="boxes_content-image">
             <img loading="lazy" src="./assets/img/new/2.jpeg" alt="" class="boxes_content-image--img">
@@ -258,7 +243,7 @@
           <a href="./climatisation-reversible.html" class="boxes_content-link my-3">PLUS D’INFOS</a>
         </div>
       </div>
-      <div class="col-lg-3 col-md-12">
+      <div class="col-lg-3 col-md-6 my-4">
         <div class="boxes_content">
           <div class="boxes_content-image">
             <img loading="lazy" src="./assets/img/new/3.jpeg" alt="" class="boxes_content-image--img">
@@ -270,7 +255,7 @@
           <a href="./chauffe-eau-thermodynamique.html" class="boxes_content-link my-3">PLUS D’INFOS</a>
         </div>
       </div>
-      <div class="col-lg-3 col-md-12">
+      <div class="col-lg-3 col-md-6 my-4">
         <div class="boxes_content">
           <div class="boxes_content-image">
             <img loading="lazy" src="./assets/img/new/4.jpeg" alt="" class="boxes_content-image--img">
@@ -363,8 +348,8 @@
   </div>
 </section>
 
-<div class="stripe">
-  <div class="container">
+<div class="stripe section2">
+  <div class="container-fluid">
     <h2 class="menu_content-title text-white text-center">Maintenance technique</h3>
       <p class="menu_content-p text-white text-center">
         La réactivité de notre équipe d’installateurs de pompe à chaleur en Essonne vous assure un suivi parfait de tous
@@ -400,24 +385,24 @@
 </section>
 <section class="partners section">
   <div class="container-fluid">
-    <div class="partners_content">
+    <div class="partners_content mb-5 pb-3">
       <p class="partners_content-title">Nos marques partenaires</p>
     </div>
-    <div class="partners_images owl-carousel" id="owl">
-      <div class="partners_images-image">
-        <img loading="lazy" src="./assets/img/new/p3.png" alt="" class="partners_images-image--img">
-      </div>
+    <div class="partners_images align-items-center owl-carousel" id="owl">
       <div class="partners_images-image">
         <img loading="lazy" src="./assets/img/new/mitsubishi.png" alt="" class="partners_images-image--img">
       </div>
       <div class="partners_images-image">
-        <img loading="lazy" src="./assets/img/new/panasonic.png" alt="" class="partners_images-image--img">
+        <img loading="lazy" src="./assets/img/new/atlantic.png" alt="" class="partners_images-image--img">
       </div>
       <div class="partners_images-image">
-        <img loading="lazy" src="./assets/img/new/samsung.jpeg" alt="" class="partners_images-image--img">
+        <img loading="lazy" src="./assets/img/new/p3.png" alt="" class="partners_images-image--img2">
       </div>
       <div class="partners_images-image">
         <img loading="lazy" src="./assets/img/new/toshiba.png" alt="" class="partners_images-image--img">
+      </div>
+      <div class="partners_images-image">
+        <img loading="lazy" src="./assets/img/new/samsung.jpeg" alt="" class="partners_images-image--img">
       </div>
     </div>
   </div>
@@ -426,7 +411,7 @@
   <div class="px-0 py-5">
     <div class="container">
       <div class="row my-5">
-        <div class="col-md-6">
+        <div class="col-md-6 my-3">
           <div class="partners_menu">
             <div class="partners_menu-image">
               <img src="./assets/img/new/i1.png" alt="" class="partners_menu-image--icon">
@@ -434,7 +419,7 @@
             <p class="partners_menu-p">Installation de pompe à chaleur</p>
           </div>
         </div>
-        <div class="col-md-6">
+        <div class="col-md-6 my-3">
           <div class="partners_menu">
             <div class="partners_menu-image">
               <img src="./assets/img/new/i2.png" alt="" class="partners_menu-image--icon">
@@ -442,10 +427,8 @@
             <p class="partners_menu-p">Installation de climatisation</p>
           </div>
         </div>
-      </div>
 
-      <div class="row my-5">
-        <div class="col-md-6">
+        <div class="col-md-6 my-3">
           <div class="partners_menu">
             <div class="partners_menu-image">
               <img src="./assets/img/new/i3.png" alt="" class="partners_menu-image--icon">
@@ -453,7 +436,7 @@
             <p class="partners_menu-p">Pose de Chauffe-eau</p>
           </div>
         </div>
-        <div class="col-md-6">
+        <div class="col-md-6 my-3">
           <div class="partners_menu">
             <div class="partners_menu-image">
               <img src="./assets/img/new/i4.png" alt="" class="partners_menu-image--icon">
@@ -461,10 +444,8 @@
             <p class="partners_menu-p">Maintenance de vos équipements</p>
           </div>
         </div>
-      </div>
 
-      <div class="row my-5">
-        <div class="col-md-6">
+        <div class="col-md-6 my-3">
           <div class="partners_menu">
             <div class="partners_menu-image">
               <img src="./assets/img/new/i5.png" alt="" class="partners_menu-image--icon">
@@ -472,7 +453,7 @@
             <p class="partners_menu-p">Mise aux normes</p>
           </div>
         </div>
-        <div class="col-md-6">
+        <div class="col-md-6 my-3">
           <div class="partners_menu">
             <div class="partners_menu-image">
               <img src="./assets/img/new/i6.png" alt="" class="partners_menu-image--icon">
@@ -480,10 +461,7 @@
             <p class="partners_menu-p">Réparation</p>
           </div>
         </div>
-      </div>
-
-      <div class="row my-5">
-        <div class="col-md-6">
+        <div class="col-md-6 my-3">
           <div class="partners_menu">
             <div class="partners_menu-image">
               <img src="./assets/img/new/i7.png" alt="" class="partners_menu-image--icon">
@@ -491,7 +469,7 @@
             <p class="partners_menu-p">Remplacement de pièce</p>
           </div>
         </div>
-        <div class="col-md-6">
+        <div class="col-md-6 my-3">
           <div class="partners_menu">
             <div class="partners_menu-image">
               <img src="./assets/img/new/i8.png" alt="" class="partners_menu-image--icon">
@@ -499,10 +477,7 @@
             <p class="partners_menu-p">Vérification de vos installations</p>
           </div>
         </div>
-      </div>
-
-      <div class="row my-5">
-        <div class="col-md-6">
+        <div class="col-md-6 my-3">
           <div class="partners_menu">
             <div class="partners_menu-image">
               <img src="./assets/img/new/i9.png" alt="" class="partners_menu-image--icon">
@@ -510,7 +485,7 @@
             <p class="partners_menu-p">Déplacement offert</p>
           </div>
         </div>
-        <div class="col-md-6">
+        <div class="col-md-6 my-3">
           <div class="partners_menu">
             <div class="partners_menu-image">
               <img src="./assets/img/new/i10.png" alt="" class="partners_menu-image--icon">
@@ -531,24 +506,24 @@
       <h2 class="menu_content-title text-center mb-5">Nos réalisations</h2>
     </div>
     <div class="row">
-      <div class="col-md-4 col-sm-6">
+      <div class="col-md-4 col-sm-6 my-4">
         <div class="realisation_image">
           <img src="./assets/img/new/r1.jpeg" alt="" class="realisation_image-img">
         </div>
       </div>
-      <div class="col-md-4 col-sm-6">
+      <div class="col-md-4 col-sm-6 my-4">
         <div class="realisation_image">
           <img src="./assets/img/new/r2.jpeg" alt="" class="realisation_image-img">
         </div>
       </div>
-      <div class="col-md-4 col-sm-6">
+      <div class="col-md-4 col-sm-12 my-4">
         <div class="realisation_image">
           <img src="./assets/img/new/r3.jpeg" alt="" class="realisation_image-img">
         </div>
       </div>
     </div>
     <div class="d-flex justify-content-center mt-5">
-      <a href="./devis.html" class="menu_content-link">Voir plus...</a>
+      <a href="./galerie.html" class="menu_content-link">Voir plus...</a>
     </div>
   </div>
 </section>
@@ -1976,7 +1951,7 @@
                       <p class="contact_form-label text-left">(*): Champs obligatoires</p>
                       <div class="d-flex flex-column align-items-center justify-content-center mt-4">
                           <button type="submit" class="button form-submit contact_form-button">ENVOYER</button>
-                          <p class="contact_form-label text-left">Si vous souhaitez devenir franchisé, <a href="" class="link">cliquez ici</a></p>
+                          <p class="contact_form-label text-left">Si vous souhaitez devenir franchisé, <a href="./devenir-franchise.html" class="link">cliquez ici</a></p>
                         </div>
                   </form>
               </div>
@@ -2044,9 +2019,8 @@
                 sommes nous ?</a>
             </li>
             <li class="footer_content-li mt-3">
-              <a href="./pompe-a-chaleur-air-eau.html"
-                class="footer_content-li--link my-0 py-0  ">Nos
-                Services</a>
+              <a href="./galerie.html"
+                class="footer_content-li--link my-0 py-0  ">Nos réalisations</a>
             </li>
             <li class="footer_content-li mt-3">
               <a href="./les-aides.html"

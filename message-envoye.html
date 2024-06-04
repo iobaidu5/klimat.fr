@@ -15,15 +15,16 @@
         href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
         integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
         crossorigin="anonymous" />
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <link rel="icon" href="./assets/img/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="icon" href="/assets/img/favicon.ico" type="image/x-icon" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script defer src="./assets/js/popper.min.js"></script>
-    <script defer src="./assets/js/bootstrap.min.js"></script>
+    <script defer src="/assets/js/popper.min.js"></script>
+    <script defer src="/assets/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
     integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
     crossorigin="anonymous"></script>
 
+    <script> document.addEventListener("DOMContentLoaded", () => { document.querySelectorAll("img[src]").forEach(image => { const altText = generateAltText(image.getAttribute("src")); image.alt = altText; }); }); function generateAltText(src) { return src.split('/').pop().split('.')[0].replace(/[-\/_*]/g, ' '); } </script>
 
     <title></title>
 <meta property="og:title" content="" />
@@ -81,14 +82,18 @@
                                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                                     <a class="dropdown-item  Navbar_nav-link2 "
                                         href="./pompe-a-chaleur-air-eau.html">Pompe à chaleur air/eau</a>
+                                        <hr class="Navbar_nav-hr">
                                     <a class="dropdown-item  Navbar_nav-link2 "
                                         href="./climatisation-reversible.html">climatisation 
                                         reversible</a>
+                                        <hr class="Navbar_nav-hr">
                                     <a class="dropdown-item  Navbar_nav-link2 "
                                         href="./chauffe-eau-thermodynamique.html">chauffe-eau 
                                         thermodynamique</a>
+                                        <hr class="Navbar_nav-hr">
                                         <a class="dropdown-item  Navbar_nav-link2 "
                                         href="./entretiens.html">Entretien SAV</a>
+                                        <hr class="Navbar_nav-hr">
                                 </div>
                             </li>
         
@@ -199,9 +204,8 @@
                 sommes nous ?</a>
             </li>
             <li class="footer_content-li mt-3">
-              <a href="./pompe-a-chaleur-air-eau.html"
-                class="footer_content-li--link my-0 py-0  ">Nos
-                Services</a>
+              <a href="./galerie.html"
+                class="footer_content-li--link my-0 py-0  ">Nos réalisations</a>
             </li>
             <li class="footer_content-li mt-3">
               <a href="./les-aides.html"

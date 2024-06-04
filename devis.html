@@ -15,15 +15,16 @@
         href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
         integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
         crossorigin="anonymous" />
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <link rel="icon" href="./assets/img/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="icon" href="/assets/img/favicon.ico" type="image/x-icon" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script defer src="./assets/js/popper.min.js"></script>
-    <script defer src="./assets/js/bootstrap.min.js"></script>
+    <script defer src="/assets/js/popper.min.js"></script>
+    <script defer src="/assets/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
     integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
     crossorigin="anonymous"></script>
 
+    <script> document.addEventListener("DOMContentLoaded", () => { document.querySelectorAll("img[src]").forEach(image => { const altText = generateAltText(image.getAttribute("src")); image.alt = altText; }); }); function generateAltText(src) { return src.split('/').pop().split('.')[0].replace(/[-\/_*]/g, ' '); } </script>
 
     <title></title>
 <meta property="og:title" content="" />
@@ -81,14 +82,18 @@
                                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                                     <a class="dropdown-item  Navbar_nav-link2 "
                                         href="./pompe-a-chaleur-air-eau.html">Pompe à chaleur air/eau</a>
+                                        <hr class="Navbar_nav-hr">
                                     <a class="dropdown-item  Navbar_nav-link2 "
                                         href="./climatisation-reversible.html">climatisation 
                                         reversible</a>
+                                        <hr class="Navbar_nav-hr">
                                     <a class="dropdown-item  Navbar_nav-link2 "
                                         href="./chauffe-eau-thermodynamique.html">chauffe-eau 
                                         thermodynamique</a>
+                                        <hr class="Navbar_nav-hr">
                                         <a class="dropdown-item  Navbar_nav-link2 "
                                         href="./entretiens.html">Entretien SAV</a>
+                                        <hr class="Navbar_nav-hr">
                                 </div>
                             </li>
         
@@ -152,27 +157,27 @@
 <section class="menu section pt-5 bg-prim">
   <div class="container-fluid">
     <div class="row align-items-center">
-      <div class="col-md-12">
+      <div class="col-md-12 my-3">
         <div class="menu_content">
           <h2 class="menu_content-title text-center mb-0 pt-0 pb-2">Demande de devis en ligne</h2>
           <hr class="menu_content-divider">
         </div>
         <ul class="footer_content-ul list-none ul-flex">
           <li class="footer_content-li">
-            <i class="fas fa-envelope footer_content-icon"></i> Contactez-nous par mail : <a
+            <img src="./assets/img/Letter.png" class="footer_content-icon" /> Contactez-nous par mail : <a
               href="mailto:LOIC.SEISEN@klimat.fr" class="footer_content-li--link">
               <strong>LOIC.SEISEN@klimat.fr</strong></a>
           </li>
           <li class="footer_content-li">
             <p class="footer_content-li--p">
-              <i class="fas fa-phone-alt footer_content-icon"></i> Contactez-nous au : <a
+              <img src="./assets/img/Call.png" class="footer_content-icon" /> Contactez-nous au : <a
                 href="tel:01 85 53 74 38" class="footer_content-li--link">
                 <strong>01 85 53 74 38</strong></a>
             </p>
           </li>
           <li class="footer_content-li">
             <p class="footer_content-li--p">
-              <i class="fas fa-map-pin footer_content-icon"></i> Address: 11 Route de Leuville 91310 Linas
+              <img src="./assets/img/Place-Marker.png" class="footer_content-icon" /> Address: 11 Route de Leuville 91310 Linas
             </p>
           </li>
         </ul>
@@ -184,7 +189,7 @@
 <section class="section contact pt-0">
   <div class="container">
     <div class="row align-items-center mt-5">
-      <div class="col-md-12">
+      <div class="col-md-12 my-3">
         <div class="contact_form2">
           <form class="form" method="post" id="devisForm" action="https://jgviaboye9.execute-api.eu-west-3.amazonaws.com/prod/notify">
             <input type="hidden" name="lang" value="fr">
@@ -194,33 +199,33 @@
             <input type="hidden" name="redirectUrl" value="/">
             <input type="hidden" name="redirectUrl" value="/" />
             <div class="row">
-              <div class="col-md-6">
+              <div class="col-md-6 my-3">
                 <div class="form-group">
                   <label for="name" class="contact_form-label">Nom</label>
                   <input type="text" class="contact_form-input" id="name" name="name" placeholder="Votre nom*" required>
                 </div>
               </div>
-              <div class="col-md-6">
+              <div class="col-md-6 my-3">
                 <div class="form-group">
                   <label for="lastname" class="contact_form-label">Prenom</label>
                   <input type="text" class="contact_form-input" id="lastname" name="lastname" placeholder="Prenom*"
                     required>
                 </div>
               </div>
-              <div class="col-md-6">
+              <div class="col-md-6 my-3">
                 <div class="form-group">
                   <label for="postal" class="contact_form-label">Code postal</label>
                   <input type="text" class="contact_form-input" id="postal" name="postal" placeholder="Code postal*"
                     required>
                 </div>
               </div>
-              <div class="col-md-6">
+              <div class="col-md-6 my-3">
                 <div class="form-group">
                   <label for="postal" class="contact_form-label">Ville</label>
                   <input type="text" class="contact_form-input" id="ville" name="ville" placeholder="Ville*" required>
                 </div>
               </div>
-              <div class="col-md-12">
+              <div class="col-md-12 my-3">
                 <div class="form-group">
                   <label for="email" class="contact_form-label">Mail</label>
                   <input type="email" class="contact_form-input" id="email" name="email" aria-describedby="emailHelp"
@@ -228,7 +233,7 @@
                 </div>
               </div>
 
-              <div class="col-md-12">
+              <div class="col-md-12 my-3">
                 <div class="form-group">
                   <label class="contact_form-label">Type de logement</label>
                   <div class="form-check">
@@ -244,7 +249,7 @@
                 </div>
               </div>
 
-              <div class="col-md-12">
+              <div class="col-md-12 my-3">
                 <div class="form-group">
                   <label for="votre-projet" class="contact_form-label">Quel est votre projet</label>
                   <select class="contact_form-input" id="votre-projet" name="votre-projet">
@@ -256,7 +261,7 @@
                 </div>
               </div>
 
-              <div class="col-md-12">
+              <div class="col-md-12 my-3">
                 <div class="form-group">
                   <label for="chauffage-deja-installe" class="contact_form-label">Type de chauffage déjà installé
                     :</label>
@@ -266,7 +271,7 @@
                 </div>
               </div>
 
-              <div class="col-md-12">
+              <div class="col-md-12 my-3">
                 <div class="form-group">
                   <label for="quel-delai" class="contact_form-label">Dans quel délai</label>
                   <select class="contact_form-input" id="quel-delai" name="quel-delai">
@@ -275,7 +280,7 @@
                 </div>
               </div>
 
-              <div class="col-md-12">
+              <div class="col-md-12 my-3">
                 <div class="form-group">
                   <label for="message" class="contact_form-label">Informations complémentaire (facultatif)*</label>
                   <textarea type="text" class="contact_form-input h-100" id="message" name="message"
@@ -367,9 +372,8 @@
                 sommes nous ?</a>
             </li>
             <li class="footer_content-li mt-3">
-              <a href="./pompe-a-chaleur-air-eau.html"
-                class="footer_content-li--link my-0 py-0  ">Nos
-                Services</a>
+              <a href="./galerie.html"
+                class="footer_content-li--link my-0 py-0  ">Nos réalisations</a>
             </li>
             <li class="footer_content-li mt-3">
               <a href="./les-aides.html"
