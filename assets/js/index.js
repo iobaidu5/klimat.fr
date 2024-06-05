@@ -1,9 +1,26 @@
-$(document).ready(function () {
-    $("li.active").removeClass("active");
-    $('a[href="' + location.pathname + '"]')
-      .closest("li")
-      .addClass("active");
+document.addEventListener("DOMContentLoaded", function() {
+  // Remove the 'active' class from any <li> elements that have it
+  document.querySelectorAll("li.active").forEach(function(element) {
+    element.classList.remove("active");
   });
+
+  // Get the current path
+  var currentPath = window.location.pathname;
+
+  // Find the <a> elements and check their href attribute
+  document.querySelectorAll('a[href]').forEach(function(anchor) {
+    // Ensure the href attribute is not '#' and matches the current path
+    if (anchor.getAttribute('href') !== '#' && anchor.pathname === currentPath) {
+      // Find the closest <li> parent and add the 'active' class to it
+      var closestLi = anchor.closest("li");
+      if (closestLi) {
+        closestLi.classList.add("active");
+      }
+    }
+  });
+});
+
+
 
   // Function to add title attribute to all <a> tags
 function addTitleToLinks() {
