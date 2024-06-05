@@ -24,8 +24,49 @@ function addTitleToLinks() {
 addTitleToLinks();
 
 
+document.addEventListener('DOMContentLoaded', function() {
+  const playButton = document.querySelector('.play-button');
+  const video = document.querySelector('.background-video');
+  const overlay = document.querySelector('.overlay');
+  const fullScreenBackdrop = document.querySelector('.full-screen-backdrop');
+  const title = document.querySelector('.title');
+  const description = document.querySelector('.description');
+  const closeButton = document.querySelector('.close-button');
 
+  playButton.addEventListener('click', function() {
+    video.play();
+    fullScreenBackdrop.style.display = 'block';
+    playButton.style.display = 'none';
+    title.style.display = 'block';
+    description.style.display = 'block';
+    closeButton.style.display = 'block';
+  });
 
+  closeButton.addEventListener('click', function() {
+    video.pause();
+    fullScreenBackdrop.style.display = 'none';
+    playButton.style.display = 'block';
+    title.style.display = 'none';
+    description.style.display = 'none';
+    closeButton.style.display = 'none';
+  });
+
+  video.addEventListener('pause', function() {
+    fullScreenBackdrop.style.display = 'none';
+    playButton.style.display = 'block';
+    title.style.display = 'none';
+    description.style.display = 'none';
+    closeButton.style.display = 'none';
+  });
+
+  video.addEventListener('ended', function() {
+    fullScreenBackdrop.style.display = 'none';
+    playButton.style.display = 'block';
+    title.style.display = 'none';
+    description.style.display = 'none';
+    closeButton.style.display = 'none';
+  });
+});
   const nav = document.querySelector(".Navbar");
   window.addEventListener("scroll", fixNav);
   

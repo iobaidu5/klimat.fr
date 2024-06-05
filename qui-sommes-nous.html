@@ -53,7 +53,7 @@
     <nav class="navbar Navbar_main navbar-expand-lg fixedNav">
         <div class="container-fluid to-col">
             <div class="Navbar_image">
-                <a href="./index.html" title="Accueil"><img loading="lazy"  loading="lazy" src="./assets/img/logo.png"
+                <a href="./accueil.html" title="Accueil"><img loading="lazy"  loading="lazy" src="./assets/img/logo.png"
                         class="Navbar_image-img" alt="Ardent poêle" /></a>
             </div>
             <button class="navbar-toggler Navbar_toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
@@ -66,7 +66,7 @@
                         <ul class="navbar-nav Navbar_nav w-100">
                             <li class="nav-item Navbar_nav-item">
                                 <a class="nav-link  Navbar_nav-link2 "
-                                    title="Accueil" href="./index.html"> Accueil</a>
+                                    title="Accueil" href="./accueil.html"> Accueil</a>
                             </li>
                             <li class="nav-item Navbar_nav-item ">
                                 <a class="nav-link  Navbar_nav-link2 "
@@ -143,13 +143,12 @@
     <div class="banner_content">
       <h1 class="banner_content-title">Qui sommes nous ?</h1>
       <div class="banner_content-links">
-        <span class="banner_content-links--link"><a href="./index.html"
-                class="banner_content-links--active text-white" title="Accueil">Accueil &nbsp;</a></span>
-        <span class="banner_content-links--link"> <i
-                class="fas fa-circle banner_content-links--icon"></i>
+        <span class="banner_content-links--link"><a href="./accueil.html"
+            class="banner_content-links--active text-white" title="Accueil">Accueil &nbsp;</a></span>
+        <span class="banner_content-links--link"> <i class="fas fa-circle banner_content-links--icon"></i>
         </span>
         <span class="banner_content-links--link color-prim"> &nbsp; Qui sommes nous</span>
-    </div>
+      </div>
     </div>
   </div>
 </section>
@@ -253,7 +252,7 @@
   <div class="container-fluid">
     <div class="menu_content">
       <h2 class="menu_content-title2">Notre équipe</h2>
-      </div>
+    </div>
     <div class="row">
       <div class="col-lg-3 col-md-6">
         <div class="boxes_content2 px-3">
@@ -344,10 +343,18 @@
         <div class="menu_content">
           <h2 class="menu_content-title text-center">Faites confiance à Klimat</h2>
           <div class="menu_image slider-section mt-5">
-            <video class="background-video" autoplay loop muted playsinline>
-              <source src="./assets/img/short_video.mp4" type="video/mp4">
-              Your browser does not support the video tag.
-            </video>
+            <div class="video-container">
+              <div class="overlay"></div>
+              <div class="full-screen-backdrop"></div>
+              <i class="fas fa-play play-button"></i>
+              <video class="background-video" playsinline>
+                <source src="./assets/img/short_video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+              <h3 class="title menu_content-title">Video Title</h3>
+              <p class="description boxes_content-head">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <i class="fas fa-times close-button"></i>
+            </div>
           </div>
         </div>
       </div>
@@ -408,7 +415,7 @@
           <ul class="footer_content-ul list-none">
             <p class="footer_content-header">Autres liens</p>
             <li class="footer_content-li mt-3">
-              <a href="./index.html"
+              <a href="./accueil.html"
                 class="footer_content-li--link my-0 py-0  ">Accueil</a>
             </li>
             <li class="footer_content-li mt-3">
