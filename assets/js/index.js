@@ -1,26 +1,9 @@
-document.addEventListener("DOMContentLoaded", function() {
-  // Remove the 'active' class from any <li> elements that have it
-  document.querySelectorAll("li.active").forEach(function(element) {
-    element.classList.remove("active");
+$(document).ready(function () {
+    $("li.active").removeClass("active");
+    $('a[href="' + location.pathname + '"]')
+      .closest("li")
+      .addClass("active");
   });
-
-  // Get the current path
-  var currentPath = window.location.pathname;
-
-  // Find the <a> elements and check their href attribute
-  document.querySelectorAll('a[href]').forEach(function(anchor) {
-    // Ensure the href attribute is not '#' and matches the current path
-    if (anchor.getAttribute('href') !== '#' && anchor.pathname === currentPath) {
-      // Find the closest <li> parent and add the 'active' class to it
-      var closestLi = anchor.closest("li");
-      if (closestLi) {
-        closestLi.classList.add("active");
-      }
-    }
-  });
-});
-
-
 
   // Function to add title attribute to all <a> tags
 function addTitleToLinks() {
@@ -41,34 +24,41 @@ function addTitleToLinks() {
 addTitleToLinks();
 
 
+
 document.addEventListener('DOMContentLoaded', function() {
   const playButton = document.querySelector('.play-button');
   const video = document.querySelector('.background-video');
-  const overlay = document.querySelector('.overlay');
   const fullScreenBackdrop = document.querySelector('.full-screen-backdrop');
+  const videoPopup = document.querySelector('.video-popup');
   const title = document.querySelector('.title');
   const description = document.querySelector('.description');
   const closeButton = document.querySelector('.close-button');
+  const toHide = document.querySelector('.vid-to-hide');
 
   playButton.addEventListener('click', function() {
-    video.play();
+    videoPopup.style.display = 'block';
     fullScreenBackdrop.style.display = 'block';
     playButton.style.display = 'none';
     title.style.display = 'block';
     description.style.display = 'block';
     closeButton.style.display = 'block';
+    //toHide.style.display = "none"
+    video.play();
   });
 
   closeButton.addEventListener('click', function() {
     video.pause();
+    videoPopup.style.display = 'none';
     fullScreenBackdrop.style.display = 'none';
     playButton.style.display = 'block';
     title.style.display = 'none';
     description.style.display = 'none';
     closeButton.style.display = 'none';
+    //toHide.style.display = 'block';
   });
 
   video.addEventListener('pause', function() {
+    videoPopup.style.display = 'none';
     fullScreenBackdrop.style.display = 'none';
     playButton.style.display = 'block';
     title.style.display = 'none';
@@ -77,13 +67,17 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 
   video.addEventListener('ended', function() {
+    videoPopup.style.display = 'none';
     fullScreenBackdrop.style.display = 'none';
     playButton.style.display = 'block';
     title.style.display = 'none';
     description.style.display = 'none';
     closeButton.style.display = 'none';
+    //toHide.style.display = 'block';
   });
 });
+
+
   const nav = document.querySelector(".Navbar");
   window.addEventListener("scroll", fixNav);
   
