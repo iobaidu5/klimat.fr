@@ -1,0 +1,536 @@
+<!doctype html>
+<html>
+<head>
+  <meta http-equiv='Content-Type' content='text/html; charset=utf-8' />
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="https://fonts.googleapis.com/css?family=Heebo:400,700|Lato:400,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+    crossorigin="anonymous" />
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+    crossorigin="anonymous" />
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="icon" href="./assets/img/favicon.ico" type="image/x-icon" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./assets/js/popper.min.js"></script>
+  <script defer src="./assets/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+    integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+    crossorigin="anonymous"></script>
+
+  <script> document.addEventListener("DOMContentLoaded", () => { document.querySelectorAll("img[src]").forEach(image => { const altText = generateAltText(image.getAttribute("src")); image.alt = altText; }); }); function generateAltText(src) { return src.split('/').pop().split('.')[0].replace(/[-\/_*]/g, ' '); } </script>
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-215575286-1"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'UA-215575286-1');
+</script>
+
+<script>
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+  gtag('js', new Date());
+
+  gtag('config', 'UA-144981778-1');
+</script>
+
+  <title></title>
+<meta property="og:title" content="" />
+<meta property="og:locale" content="fr_FR" />
+<meta name="description" content="" />
+<meta property="og:description" content="" />
+<meta name="keywords" content="" />
+<link rel="canonical" href="http://localhost:4000/blog" />
+<meta property="og:url" content="http://localhost:4000/blog" />
+<meta property="og:site_name" content="BHInternet" />
+<script type="application/ld+json">
+{
+"@context":"https://schema.org",
+"@type":"WebSite",
+"url":"http://localhost:4000/blog",
+"description":"",
+"name":""
+}
+</script>
+
+</head>
+
+<body>
+
+  
+  <section class="Navbar navbar-main fixedNav">
+    <nav class="navbar Navbar_main navbar-expand-lg fixedNav">
+        <div class="container-fluid to-col">
+            <div class="Navbar_image">
+                <a href="./index.html" title="Accueil"><img loading="lazy"  loading="lazy" src="./assets/img/logo.png"
+                        class="Navbar_image-img" alt="Ardent poêle" /></a>
+            </div>
+            <button class="navbar-toggler Navbar_toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fa fa-bars toggle-button Navbar_toggler-icon" aria-hidden="true"></i>
+            </button>
+            <div class="collapse navbar-collapse Navbar_nav-collapse" id="navbarNav">
+                <div class="dflex2">
+                    <div>
+                        <ul class="navbar-nav Navbar_nav w-100">
+                            <li class="nav-item Navbar_nav-item">
+                                <a class="nav-link  Navbar_nav-link2 "
+                                    title="Accueil" href="./index.html"> Accueil</a>
+                            </li>
+                            <li class="nav-item Navbar_nav-item ">
+                                <a class="nav-link  Navbar_nav-link2 "
+                                    title="Qui sommes nous ?" href="./qui-sommes-nous.html">
+                                    Qui sommes nous ?</a>
+                            </li>
+                            <li class="nav-item dropdown Navbar_nav-item">
+                                <a class="nav-link  Navbar_nav-link2  dropdown-toggle  d-flex align-items-center"
+                                    href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+                                    aria-expanded="false">Nos produits et services
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item  Navbar_nav-link2 "
+                                        href="./pompe-a-chaleur-air-eau.html">Pompe à chaleur air/eau</a>
+                                        <hr class="Navbar_nav-hr">
+                                    <a class="dropdown-item  Navbar_nav-link2 "
+                                        href="./climatisation-reversible.html">climatisation 
+                                        reversible</a>
+                                        <hr class="Navbar_nav-hr">
+                                    <a class="dropdown-item  Navbar_nav-link2 "
+                                        href="./chauffe-eau-thermodynamique.html">chauffe-eau 
+                                        thermodynamique</a>
+                                        <hr class="Navbar_nav-hr">
+                                        <a class="dropdown-item  Navbar_nav-link2 "
+                                        href="./entretiens.html">Entretien SAV</a>
+                                        <hr class="Navbar_nav-hr">
+                                </div>
+                            </li>
+        
+        
+                            <li class="nav-item Navbar_nav-item">
+                                <a class="nav-link  Navbar_nav-link2 "
+                                    title="Nos réalisations" href="./galerie.html">
+                                    Nos réalisations </a>
+                            </li>
+        
+                            <li class="nav-item Navbar_nav-item">
+                                <a class="nav-link  Navbar_nav-link2 "
+                                    title="Les aides" href="./les-aides.html">
+                                    Les aides </a>
+                            </li>
+        
+                            <li class="nav-item Navbar_nav-item">
+                                <a class="nav-link  Navbar_nav-link2 "
+                                    title="Contact" href="./contact.html">
+                                    Contact </a>
+                            </li>
+                            <li class="nav-item Navbar_nav-item">
+                              <a class="nav-link  Navbar_nav-link2 "
+                                  title="Contact" href="./devenir-franchise.html">
+                                  Devenir franchisé </a>
+                          </li>
+                        </ul>
+                    </div>
+                    <div class="w-100 dflex to-be-white">
+                        <div>
+                            <li class="nav-item Navbar_nav-item">
+                                <a class="nav-link Navbar_nav-btn" title="Devis en ligne"
+                                    href="./devis.html">Devis
+                                    en ligne</a>
+                            </li>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+</section>
+  
+
+  <div class="">
+    <section class="banner-blog">
+  <div class="container">
+    <div class="banner_content">
+      <h1 class="banner_content-title">Blog</h1>
+      <div class="banner_content-links">
+        <span class="banner_content-links--link"><a href="./index.html"
+            class="banner_content-links--active text-white" title="Accueil">Accueil &nbsp;</a></span>
+        <span class="banner_content-links--link"> <i class="fas fa-circle banner_content-links--icon"></i>
+        </span>
+        <span class="banner_content-links--link color-prim"> &nbsp; Blog</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="menu section bg-prim">
+  <div class="container-fluid">
+    <div class="row align-items-center">
+      <div class="col-md-6">
+        <div class="menu_content">
+          <h2 class="menu_content-title">Préparez votre maison pour l'été : guide complet de climatisation</h2>
+          <p class="menu_content-p m-r-2">
+            Avec l'arrivée des beaux jours et de la montée des températures, il est crucial de préparer votre maison
+            afin d'assurer une fraîcheur optimale tout au long de l'été. Un climatiseur bien entretenu peut
+            considérablement améliorer votre confort intérieur tout en vous aidant à réduire vos factures énergétiques.
+            Ce guide complet détaille les meilleures pratiques pour installer, entretenir et optimiser la climatisation
+            de votre logement.
+          </p>
+          <a href="./climatisation-ete-maison.html" class="menu_content-link">Lire la suite</a>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="menu_image">
+          <img loading="lazy" src="./assets/img/blog-1.jpeg" alt="" class="menu_image-img3">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="menu section pt-5 mt-5">
+  <div class="container-fluid">
+    <div class="row align-items-center">
+      <div class="col-md-6">
+        <div class="menu_image">
+          <img loading="lazy" src="./assets/img/blog-2.jpeg" alt="" class="menu_image-img3">
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="menu_content">
+          <h2 class="menu_content-title">Les climatiseurs les plus écoénergétiques en 2024</h2>
+          <p class="menu_content-p m-r-2">
+            En 2024, l'efficacité énergétique des climatiseurs est devenue un critère incontournable pour les
+            utilisateurs cherchant à optimiser leur consommation d'énergie et réduire leurs factures. Cet article
+            explore en détail les modèles de climatiseurs les plus écoénergétiques disponibles sur le marché cette
+            année. De l'avantage économique à la performance, en passant par le fonctionnement et les marques de
+            référence, découvrons quels sont les meilleurs choix pour maintenir une température confortable tout en
+            étant respectueux de l'environnement.
+          </p>
+          <a href="./climatiseur-ecoenergetique.html" class="menu_content-link">Lire la suite</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="menu section pt-5 mt-5 pb-5 bg-prim">
+  <div class="container-fluid">
+    <div class="row align-items-center">
+      <div class="col-md-6">
+        <div class="menu_content">
+          <h2 class="menu_content-title">Tendances de la climatisation 2024 : innovations et transformations</h2>
+          <p class="menu_content-p m-r-2">
+            La climatisation est devenue une composante essentielle pour le confort thermique dans les maisons et les
+            lieux de travail. Avec l'urgence climatique qui se profile à l'horizon, le secteur de la climatisation subit
+            des transformations rapides et significatives. Voyons les tendances émergentes en matière de climatisation
+            en 2024, influencées par les avancées technologiques, les nouvelles régulations environnementales, et les
+            besoins changeants du marché.
+          </p>
+          <a href="./tendance-climatisation.html" class="menu_content-link">Lire la suite</a>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="menu_image">
+          <img loading="lazy" src="./assets/img/blog-3.jpeg" alt="" class="menu_image-img3">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="menu section">
+  <div class="container-fluid">
+    <div class="row align-items-center">
+      <div class="col-md-6">
+        <div class="menu_image">
+          <img loading="lazy" src="./assets/img/blog-4.jpeg" alt="" class="menu_image-img3">
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="menu_content">
+          <h2 class="menu_content-title">Guide d'achat de climatiseurs pour petits espaces : tout ce qu'il faut savoir
+          </h2>
+          <p class="menu_content-p m-r-2">
+            Lorsque l'été bat son plein, les petites pièces comme les studios, chambres ou bureaux peuvent devenir
+            étouffantes. Choisir un climatiseur adapté à ces espaces restreints est crucial pour votre confort
+            quotidien. Ce guide complet vous aidera à naviguer parmi les différents modèles disponibles, en tenant
+            compte de nombreux facteurs spécifiques aux petits espaces.
+          </p>
+          <a href="./guide-achat-climatisation-petit-espace.html" class="menu_content-link">Lire la suite</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="menu section pt-5 mt-5 bg-prim">
+  <div class="container-fluid">
+    <div class="row align-items-center">
+
+      <div class="col-md-6">
+        <div class="menu_content">
+          <h2 class="menu_content-title">Une révolution silencieuse : la demande croissante pour les pompes à chaleur en
+            2024</h2>
+          <p class="menu_content-p m-r-2">
+            En 2024, la demande pour les pompes à chaleur connaît une hausse spectaculaire. Ce phénomène est largement
+            influencé par des facteurs économiques, environnementaux et législatifs. Le décret récent, les nouvelles
+            aides financières et les préoccupations écologiques jouent tous un rôle dans cette évolution.
+          </p>
+          <a href="./demande-pompes-a-chaleur.html" class="menu_content-link">Lire la suite</a>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="menu_image">
+          <img loading="lazy" src="./assets/img/blog-5.jpeg" alt="" class="menu_image-img3">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="menu section">
+  <div class="container-fluid">
+    <div class="row align-items-center">
+      <div class="col-md-6">
+        <div class="menu_image">
+          <img loading="lazy" src="./assets/img/blog-6.jpeg" alt="" class="menu_image-img3">
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="menu_content">
+          <h2 class="menu_content-title">Prévisions de consommation énergétique des climatiseurs pour 2024</h2>
+          <p class="menu_content-p m-r-2">
+            La consommation énergétique des climatiseurs constitue une part significative des dépenses énergétiques des
+            ménages et entreprises, surtout en période estivale. Avec les changements climatiques et l'augmentation
+            des températures globales, comprendre les projections pour la consommation énergétique de ces appareils
+            devient primordial. Dans cet article, nous allons explorer les différentes facettes qui influencent cette
+            consommation pour l'année 2024, incluant la puissance nécessaire, le coût associé, ainsi que les variations
+            régionales.
+          </p>
+          <a href="./consommation-electrique-climatiseur.html" class="menu_content-link">Lire la suite</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="menu section pt-5 mt-5 bg-prim">
+  <div class="container-fluid">
+    <div class="row align-items-center">
+      <div class="col-md-6">
+        <div class="menu_content">
+          <h2 class="menu_content-title">Les critères essentiels pour choisir une pompe à chaleur en 2024</h2>
+          <p class="menu_content-p m-r-2">
+            Avec l'évolution constante des technologies et la montée en puissance des préoccupations écologiques, le
+            choix d'une pompe à chaleur (PAC) est devenu un sujet majeur pour de nombreux foyers et propriétaires de
+            piscine en 2024. Cet article se propose de détailler les différents critères à prendre en compte pour
+            sélectionner la meilleure pompe à chaleur adaptée à vos besoins spécifiques.
+          </p>
+          <a href="./comment-choisir-une-pompe-a-chaleur.html" class="menu_content-link">Lire la suite</a>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="menu_image">
+          <img loading="lazy" src="./assets/img/blog-7.jpeg" alt="" class="menu_image-img3">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="menu section">
+  <div class="container-fluid">
+    <div class="row align-items-center">
+      <div class="col-md-6">
+        <div class="menu_image">
+          <img loading="lazy" src="./assets/img/blog-9.jpeg" alt="" class="menu_image-img3">
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="menu_content">
+          <h2 class="menu_content-title">Les meilleures pompes à chaleur pour 2024 : un guide complet</h2>
+          <p class="menu_content-p m-r-2">
+            Avec les préoccupations grandissantes autour des économies d'énergie et de l'impact environnemental,
+            les pompes à chaleur (PAC) deviennent une solution prisée pour le chauffage et la climatisation des
+            habitations. En 2024, le choix est vaste parmi les fabricants tels que Daikin, Mitsubishi Electric,
+            Viessmann, Airwell, Thermor, et bien d'autres. Cet article offre une analyse approfondie des meilleures
+            pompes à chaleur disponibles sur le marché cette année.
+          </p>
+          <a href="./meilleure-pompe-a-chaleur.html" class="menu_content-link">Lire la suite</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+  </div>
+
+  <div class="fixphone">
+    <div class="Navbar_nav-image d-flex justify-content-center flex-column mx-auto w-100 mt-0 mb-5 pb-5">
+      <img loading="lazy" src="./assets/img/new/decenalle.png" alt="decenalle" class="Navbar_nav-image--img2 my-3">
+      <img loading="lazy" src="./assets/img/new/rge.png" alt="RGE" class="Navbar_nav-image--img2 my-3">
+    </div>
+    <div>
+      <a href="tel:01 85 53 74 38" title="01 85 53 74 38" class="button one phoneone"><i
+          class="fas fa-phone-alt"></i> &nbsp;01 85 53 74 38</a>
+    </div>
+  </div>
+  <footer class="footer section pb-0 bg-prim">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-3 col-sm-6 my-2">
+        <div class="footer_logo mt-5">
+          <img loading="lazy" loading="lazy" src="./assets/img/new/logo.png" alt="" class="footer_logo-img">
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6 my-2">
+        <div class="footer_content">
+          <ul class="footer_content-ul list-none">
+            <p class="footer_content-header">Nos produits et services</p>
+            <li class="footer_content-li mt-3">
+              <a href="./pompe-a-chaleur-air-eau.html"
+                class="footer_content-li--link my-0 py-0  ">Pompe à
+                chaleur</a>
+            </li>
+            <li class="footer_content-li mt-3">
+              <a href="./climatisation-reversible.html"
+                class="footer_content-li--link my-0 py-0  ">Climatisation
+                reversible</a>
+            </li>
+            <li class="footer_content-li mt-3">
+              <a href="./chauffe-eau-thermodynamique.html"
+                class="footer_content-li--link my-0 py-0  ">Chauffe-eau
+                thermodynamique</a>
+            </li>
+            <li class="footer_content-li mt-3">
+              <a href="./entretiens.html"
+                class="footer_content-li--link my-0 py-0  ">Entretien
+                SAV</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6 my-2">
+        <div class="footer_content">
+          <ul class="footer_content-ul list-none">
+            <p class="footer_content-header">Autres liens</p>
+            <li class="footer_content-li mt-3">
+              <a href="./index.html"
+                class="footer_content-li--link my-0 py-0  ">Accueil</a>
+            </li>
+            <li class="footer_content-li mt-3">
+              <a href="./qui-sommes-nous.html"
+                class="footer_content-li--link my-0 py-0  ">Qui
+                sommes nous ?</a>
+            </li>
+            <li class="footer_content-li mt-3">
+              <a href="./galerie.html"
+                class="footer_content-li--link my-0 py-0  ">Nos réalisations</a>
+            </li>
+            <li class="footer_content-li mt-3">
+              <a href="./les-aides.html"
+                class="footer_content-li--link my-0 py-0  ">Les
+                aides</a>
+            </li>
+            <li class="footer_content-li mt-3">
+              <a href="./contact.html"
+                class="footer_content-li--link my-0 py-0  ">Contact</a>
+            </li>
+            <li class="footer_content-li mt-3">
+              <a href="./devenir-franchise.html"
+                class="footer_content-li--link my-0 py-0  ">Devenir
+                franchisé</a>
+            </li>
+            <li class="footer_content-li mt-3">
+              <a href="./devis.html"
+                class="footer_content-li--link my-0 py-0  ">Devis</a>
+            </li>
+            <li class="footer_content-li mt-3">
+              <a href="./blog.html"
+                class="footer_content-li--link my-0 py-0   active-clr ">Blog</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6 my-2">
+        <div class="footer_content">
+          <ul class="footer_content-ul list-none">
+            <p class="footer_content-header">Contactez-nous</p>
+            <li class="footer_content-li">
+              <p class="footer_content-li--p">
+                Adresse: 11 Route de Leuville 91310 Linas</p>
+            </li>
+            <li class="footer_content-li">
+              <p class="footer_content-li--p">
+                Téléphone: <a href="tel:01 85 53 74 38" class="footer_content-li--link">
+                  01 85 53 74 38</a></p>
+            </li>
+            <li class="footer_content-li">
+              E-mail: <a href="mailto:loic.seisen@klimat.fr" class="footer_content-li--link">
+                loic.seisen@klimat.fr</a>
+            </li>
+            <li class="footer_content-li mt-3">
+              <p class="footer_content-li--p">Nos horaires :</p>
+            </li>
+            <li class="footer_content-li">
+              <p class="footer_content-li--p">Du lundi au vendredi : 9H00 - 21H00</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer_banner mt-3">
+    <div class="container-fluid">
+      <ul class="footer_banner-ul">
+        <li class="footer_banner-li">
+          <a href="./pompe-a-chaleur-77.html" class="footer_banner-li--link ">Pompe à chaleur 77</a>
+        </li>
+        <li class="footer_banner-li">
+          <a href="./climatisation-91.html" class="footer_banner-li--link ">Climatisation 91</a>
+        </li>
+        <li class="footer_banner-li">
+          <a href="./installateur-essonne.html" class="footer_banner-li--link ">Installateur pompe à chaleur Essonne</a>
+        </li>
+        <li class="footer_banner-li">
+          <a href="./installateur-daikin.html" class="footer_banner-li--link ">Installateur climatisation Daikin</a>
+        </li>
+        <li class="footer_banner-li">
+          <a href="./installateur-pompe-daikin.html" class="footer_banner-li--link ">Installateur pompe à chaleur Daikin</a>
+        </li>
+
+        
+      </ul>
+    </div>
+  </div>
+</footer>
+<div class="footer_bottom d-flex justify-content-center mx-auto py-5 w-100 bg-prim">
+  <div class="">
+    <a href="https://www.bhinternet.fr/" target="_blank"
+      class="footer_content-li--link text-black my-0 text-center w-100">BHInternet - Création site internet
+      entreprise  | 2023 | </a><a href="" class="footer_content-li--link text-black my-0 text-center w-100">
+      Mentions légales</a>
+  </div>
+</div>
+
+
+<script src="./assets/js/index.js"></script>
+<script src="./assets/js/formSubmit.js"></script>
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+</body>
+
+</html>

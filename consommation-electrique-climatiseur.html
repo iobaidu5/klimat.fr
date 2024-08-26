@@ -1,0 +1,716 @@
+<!doctype html>
+<html>
+<head>
+  <meta http-equiv='Content-Type' content='text/html; charset=utf-8' />
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="https://fonts.googleapis.com/css?family=Heebo:400,700|Lato:400,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+    crossorigin="anonymous" />
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+    crossorigin="anonymous" />
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="icon" href="./assets/img/favicon.ico" type="image/x-icon" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./assets/js/popper.min.js"></script>
+  <script defer src="./assets/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+    integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+    crossorigin="anonymous"></script>
+
+  <script> document.addEventListener("DOMContentLoaded", () => { document.querySelectorAll("img[src]").forEach(image => { const altText = generateAltText(image.getAttribute("src")); image.alt = altText; }); }); function generateAltText(src) { return src.split('/').pop().split('.')[0].replace(/[-\/_*]/g, ' '); } </script>
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-215575286-1"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'UA-215575286-1');
+</script>
+
+<script>
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+  gtag('js', new Date());
+
+  gtag('config', 'UA-144981778-1');
+</script>
+
+  <title>Prévisions de consommation énergétique des climatiseurs</title>
+<meta property="og:title" content="Prévisions de consommation énergétique des climatiseurs" />
+<meta property="og:locale" content="fr_FR" />
+<meta name="description" content="" />
+<meta property="og:description" content="" />
+<meta name="keywords" content="" />
+<link rel="canonical" href="http://localhost:4000/consommation-electrique-climatiseur" />
+<meta property="og:url" content="http://localhost:4000/consommation-electrique-climatiseur" />
+<meta property="og:site_name" content="BHInternet" />
+<script type="application/ld+json">
+{
+"@context":"https://schema.org",
+"@type":"WebSite",
+"url":"http://localhost:4000/consommation-electrique-climatiseur",
+"description":"",
+"name":"Prévisions de consommation énergétique des climatiseurs"
+}
+</script>
+
+</head>
+
+<body>
+
+  
+  <section class="Navbar navbar-main fixedNav">
+    <nav class="navbar Navbar_main navbar-expand-lg fixedNav">
+        <div class="container-fluid to-col">
+            <div class="Navbar_image">
+                <a href="./index.html" title="Accueil"><img loading="lazy"  loading="lazy" src="./assets/img/logo.png"
+                        class="Navbar_image-img" alt="Ardent poêle" /></a>
+            </div>
+            <button class="navbar-toggler Navbar_toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fa fa-bars toggle-button Navbar_toggler-icon" aria-hidden="true"></i>
+            </button>
+            <div class="collapse navbar-collapse Navbar_nav-collapse" id="navbarNav">
+                <div class="dflex2">
+                    <div>
+                        <ul class="navbar-nav Navbar_nav w-100">
+                            <li class="nav-item Navbar_nav-item">
+                                <a class="nav-link  Navbar_nav-link2 "
+                                    title="Accueil" href="./index.html"> Accueil</a>
+                            </li>
+                            <li class="nav-item Navbar_nav-item ">
+                                <a class="nav-link  Navbar_nav-link2 "
+                                    title="Qui sommes nous ?" href="./qui-sommes-nous.html">
+                                    Qui sommes nous ?</a>
+                            </li>
+                            <li class="nav-item dropdown Navbar_nav-item">
+                                <a class="nav-link  Navbar_nav-link2  dropdown-toggle  d-flex align-items-center"
+                                    href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+                                    aria-expanded="false">Nos produits et services
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item  Navbar_nav-link2 "
+                                        href="./pompe-a-chaleur-air-eau.html">Pompe à chaleur air/eau</a>
+                                        <hr class="Navbar_nav-hr">
+                                    <a class="dropdown-item  Navbar_nav-link2 "
+                                        href="./climatisation-reversible.html">climatisation 
+                                        reversible</a>
+                                        <hr class="Navbar_nav-hr">
+                                    <a class="dropdown-item  Navbar_nav-link2 "
+                                        href="./chauffe-eau-thermodynamique.html">chauffe-eau 
+                                        thermodynamique</a>
+                                        <hr class="Navbar_nav-hr">
+                                        <a class="dropdown-item  Navbar_nav-link2 "
+                                        href="./entretiens.html">Entretien SAV</a>
+                                        <hr class="Navbar_nav-hr">
+                                </div>
+                            </li>
+        
+        
+                            <li class="nav-item Navbar_nav-item">
+                                <a class="nav-link  Navbar_nav-link2 "
+                                    title="Nos réalisations" href="./galerie.html">
+                                    Nos réalisations </a>
+                            </li>
+        
+                            <li class="nav-item Navbar_nav-item">
+                                <a class="nav-link  Navbar_nav-link2 "
+                                    title="Les aides" href="./les-aides.html">
+                                    Les aides </a>
+                            </li>
+        
+                            <li class="nav-item Navbar_nav-item">
+                                <a class="nav-link  Navbar_nav-link2 "
+                                    title="Contact" href="./contact.html">
+                                    Contact </a>
+                            </li>
+                            <li class="nav-item Navbar_nav-item">
+                              <a class="nav-link  Navbar_nav-link2 "
+                                  title="Contact" href="./devenir-franchise.html">
+                                  Devenir franchisé </a>
+                          </li>
+                        </ul>
+                    </div>
+                    <div class="w-100 dflex to-be-white">
+                        <div>
+                            <li class="nav-item Navbar_nav-item">
+                                <a class="nav-link Navbar_nav-btn" title="Devis en ligne"
+                                    href="./devis.html">Devis
+                                    en ligne</a>
+                            </li>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+</section>
+  
+
+  <div class="">
+    <section class="banner-blog6">
+  <div class="container">
+    <div class="banner_content">
+      <h1 class="banner_content-title">Prévisions de consommation énergétique des climatiseurs pour 2024</h1>
+      <div class="banner_content-links">
+        <span class="banner_content-links--link"><a href="./index.html"
+            class="banner_content-links--active text-white" title="Accueil">Accueil &nbsp;</a></span>
+        <span class="banner_content-links--link"> <i class="fas fa-circle banner_content-links--icon"></i>
+        </span>
+        <span class="banner_content-links--link color-prim"> &nbsp; Consommation énergétique climatiseurs</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="menu section">
+  <div class="container-fluid">
+    <div class="row align-items-center">
+      <div class="col-md-12">
+        <div class="menu_content">
+          <p class="menu_content-p text-center">
+            La <strong>consommation énergétique</strong> des climatiseurs constitue une part significative des
+            <strong>dépenses énergétiques</strong> des ménages et entreprises, surtout en période estivale. Avec les
+            <strong>changements climatiques</strong> et l'augmentation des <strong>températures globales</strong>,
+            comprendre les projections pour la consommation énergétique de ces appareils devient primordial. Dans cet
+            article, nous allons explorer les différentes facettes qui influencent cette consommation pour l'année 2024,
+            incluant la puissance nécessaire, le coût associé, ainsi que les variations régionales.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="menu section pt-5 mt-5 bg-prim">
+  <div class="container-fluid">
+    <div class="menu_content">
+      <h2 class="menu_content-title text-center">Évolution de la demande énergétique des climatiseurs</h2>
+
+    </div>
+    <div class="row align-items-center pt-5">
+      <div class="col-md-6">
+        <div class="menu_content">
+          <h2 class="menu_content-title">Les tendances des années précédentes</h2>
+          <p class="menu_content-p">
+            Depuis plusieurs années, la <strong>demande</strong> en climatiseurs n'a cessé d'augmenter. Selon les études
+            du marché, on a observé une hausse de 15 % de la vente des systèmes de climatisation entre 2019 et 2023.
+            Cette tendance vient principalement des vagues de chaleur plus fréquentes et intenses enregistrées dans de
+            nombreuses régions du monde.
+          </p>
+        </div>
+        <div class="menu_content">
+          <h2 class="menu_content-title">Projection pour 2024</h2>
+          <p class="menu_content-p">
+            Pour l'année 2024, les prévisions indiquent une augmentation continue de cette demande. Les experts estiment
+            que la <strong>consommation électrique</strong> liée à la climatisation augmentera de 10 % par rapport à
+            2023. Cela s'explique par une extension progressive du réseau électrique et un pouvoir d'achat croissant
+            permettant à plus de foyers d'acquérir ces équipements.
+          </p>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="menu_image">
+          <img loading="lazy" src="./assets/img/blog/KLIMAT-88-min.jpg" alt="" class="menu_image-img">
+        </div>
+      </div>
+    </div>
+
+    <!-- 
+    <div class="row align-items-center pt-5">
+      <div class="col-md-6">
+        <div class="menu_content">
+          <h2 class="menu_content-title">Daikin : l'excellence japonaise</h2>
+          <p class="menu_content-p m-r-2">
+            Daikin est souvent cité comme une référence dans le domaine des pompes à chaleur. La marque nippone propose
+            des solutions haut de gamme qui se distinguent par leur efficacité énergétique et leur faible impact
+            environnemental. Les modèles comme le Altherma sont particulièrement appréciés pour leur technologie avancée
+            et leur fiabilité.
+          </p>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="menu_content">
+          <h2 class="menu_content-title">Viessmann : qualité allemande</h2>
+          <p class="menu_content-p m-r-2">
+            Proposant des dispositifs très efficaces, Viessmann est reconnu pour son engagement envers des solutions
+            durables. Leur modèle Vitocal incarne parfaitement cette philosophie avec une grande flexibilité
+            d'installation et une très bonne efficacité énergétique.
+          </p>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="row align-items-center pt-5">
+      <div class="col-md-6">
+        <div class="menu_content">
+          <h2 class="menu_content-title">Mitsubishi Electric : innovation et performance</h2>
+          <p class="menu_content-p m-r-2">
+            Mitsubishi Electric se distingue par ses systèmes de pompe à chaleur innovants, comme la gamme Ecodan. Ces
+            unités sont réputées pour leur robustesse et leurs performances énergétiques. Les technologies utilisées
+            permettent d'optimiser la consommation d'énergie tout en offrant un confort thermique optimal.
+          </p>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="menu_content">
+          <h2 class="menu_content-title">Airwell : tradition et modernité</h2>
+          <p class="menu_content-p m-r-2">
+            Bien que moins connu, Airwell a su s'imposer sur le marché grâce à une gamme diversifiée de PAC répondant
+            aux besoins variés des consommateurs. Leurs produits sont souvent plébiscités pour leur bon rapport
+            qualité/prix.
+          </p>
+        </div>
+      </div>
+    </div> -->
+  </div>
+</section>
+
+<section class="partners section pb-3">
+  <div class="container-fluid">
+    <div class="partners_images align-items-center owl-carousel" id="owl5">
+      <div class="partners_images-image mt-3">
+        <img loading="lazy" src="./assets/img/new/mitsubishi.png" alt="" class="partners_images-image--img">
+      </div>
+      <div class="partners_images-image">
+        <img loading="lazy" src="./assets/img/viesmann.png" alt="" class="partners_images-image--img2 mt-neg-2">
+      </div>
+      <div class="partners_images-image">
+        <img loading="lazy" src="./assets/img/new/p3.png" alt="" class="partners_images-image--img2">
+      </div>
+      <div class="partners_images-image mt-4">
+        <img loading="lazy" src="./assets/img/airwell.png" alt="" class="partners_images-image--img">
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="menu section mt-0 bg-prim">
+  <div class="container-fluid">
+    <div class="row align-items-center">
+      <div class="col-md-12">
+        <div class="menu_content">
+          <h2 class="menu_content-title text-center">Facteurs influençant la consommation énergétique des climatiseurs
+          </h2>
+        </div>
+      </div>
+    </div>
+    <div class="row align-items-center mt-5">
+      <div class="col-md-6">
+        <div class="menu_image">
+          <img loading="lazy" src="./assets/img/blog/KLIMAT-5-min.jpg" alt="" class="menu_image-img3">
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="menu_content">
+          <h2 class="menu_content-title">Équipements modernes vs anciens</h2>
+          <p class="menu_content-p m-r-2">
+            Un facteur clé dans la consommation énergétique est l'âge et le type de climatiseur utilisé. Les nouveaux
+            modèles sont souvent plus efficaces que leurs prédécesseurs grâce aux <strong>avancées
+              technologiques</strong>. Par exemple :
+          </p>
+          <ul class="text-justify ml-5">
+            <li class="menu_content-p m-r-2"><strong>Les modèles Inverter</strong> : Ils adaptent leur puissance selon
+              la température ambiante, réduisant ainsi la consommation.</li>
+            <li class="menu_content-p m-r-2"><strong>Les climatiseurs à haute efficacité énergétique</strong> :
+              Certifiés avec des labels comme Energy Star, ils peuvent consommer jusqu'à 30 % moins d'énergie que les
+              modèles classiques.</li>
+          </ul>
+        </div>
+        <div class="menu_content">
+          <h2 class="menu_content-title">Conditions climatiques locales</h2>
+          <p class="menu_content-p m-r-2">
+            La <strong>région géographique</strong> influence aussi largement la consommation énergétique des
+            climatiseurs. Dans les zones tropicales ou désertiques, où les températures restent élevées toute l'année,
+            la consommation sera naturellement plus importante. En revanche, dans les climats tempérés, les périodes de
+            forte utilisation sont limitées à quelques mois d'été.
+          </p>
+        </div>
+        <div class="menu_content">
+          <h2 class="menu_content-title">Adaptation aux vagues de chaleur</h2>
+          <p class="menu_content-p m-r-2">
+            De nombreuses régions affrontent désormais des records de températures chaque été. Cela exige des
+            <strong>systèmes capables de fonctionner efficacement même lors des périodes de fortes chaleurs</strong>.
+            Les fabricants se concentrent sur des solutions résistant à des conditions climatiques extrêmes,
+            garantissant ainsi un fonctionnement sans interruption.
+          </p>
+        </div>
+        <div class="menu_content">
+          <h2 class="menu_content-title">Habitudes de consommation des utilisateurs</h2>
+          <p class="menu_content-p m-r-2">
+            Les comportements des utilisateurs jouent également un rôle majeur. Par exemple :
+          </p>
+          <ul class="text-justify ml-5">
+            <li class="menu_content-p m-r-2"><strong>L'utilisation modérée</strong> : Éteindre le climatiseur lorsqu'il
+              n'est pas nécessaire contribue à réduire la consommation énergétique globale.</li>
+            <li class="menu_content-p m-r-2"><strong>Entretien régulier</strong> : Un appareil bien entretenu fonctionne
+              plus efficacement, nécessitant moins d'énergie pour répondre aux besoins de refroidissement ou de
+              chauffage.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<section class="menu section pt-5 mt-5">
+  <div class="container-fluid">
+    <div class="row align-items-center">
+      <div class="col-md-12">
+        <div class="menu_content">
+          <h2 class="menu_content-title text-center">Estimations de coût et tarification</h2>
+        </div>
+      </div>
+    </div>
+    <div class="row align-items-center mt-5">
+      <div class="col-md-6">
+        <div class="menu_content">
+          <h2 class="menu_content-title">Coût par kilowattheure (kWh)</h2>
+          <p class="menu_content-p m-r-2">
+            Le <strong>coût énergétique</strong> des climatiseurs dépend directement du tarif de l'électricité appliqué
+            dans chaque région. Pour 2024, certaines études prévoient une légère hausse des prix de l’électricité,
+            particulièrement dans les régions fortement dépendantes des combustibles fossiles pour la production
+            d'énergie.
+          </p>
+        </div>
+        <div class="menu_content">
+          <h2 class="menu_content-title">Calcul de la consommation annuelle</h2>
+          <p class="menu_content-p m-r-2">
+            Pour calculer la consommation annuelle, on peut prendre l'exemple d'un climatiseur moyen de 2 kW utilisé
+            pendant une période de quatre mois à raison de sept heures par jour. La formule serait la suivante :<br>
+            (Puissance en kW) x (Nombre d’heures d’utilisation par jour) x (Nombre de jours d’utilisation) =
+            Consommation totale en kWh<br>
+            <br>
+            Prenons notre exemple : 2 kW x 7 heures/jour x 120 jours = 1680 kWh/an.
+          </p>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="menu_image">
+          <img loading="lazy" src="./assets/img/blog/KLIMAT-49-min.jpg" alt="" class="menu_image-img3">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="menu section pt-5 mt-5  bg-prim">
+  <div class="container-fluid">
+    <div class="row align-items-center">
+      <div class="col-md-12">
+        <div class="menu_content">
+          <h2 class="menu_content-title text-center">Comparaison internationale</h2>
+        </div>
+      </div>
+    </div>
+
+    <div class="row mt-5">
+      <div class="col-md-6 h-100">
+        <div class="menu_content h-100 bg-prim px-5 py-5">
+          <h3 class="boxes_content-title pl-0 ml-0">Pays développés vs pays en développement</h3>
+          <p class="menu_content-p">
+            Le schéma de consommation diffère grandement entre les <strong>pays développés</strong> et les <strong>pays
+              en développement.</strong> Dans les économies avancées, les équipements sont généralement plus efficaces
+            sur le plan énergétique, et les pratiques courantes incluent l'analyse des coûts-bénéfices avant d’investir
+            dans de nouveaux appareils.
+          </p>
+          <p class="menu_content-p">À contrario, dans plusieurs nations en développement, l'accès à des appareils
+            économes en énergie est encore limité, entraînant une consommation relativement élevée. Cependant, les
+            initiatives internationales visant à promouvoir l'<strong>efficacité énergétique</strong> commencent à
+            montrer leurs résultats dans ces régions.</p>
+        </div>
+      </div>
+      <div class="col-md-6 h-100">
+        <div class="menu_content h-100 bg-prim px-5 py-4">
+          <h3 class="boxes_content-title  pl-0 ml-0">Cas spécifiques : États-Unis et Chine</h3>
+          <p class="menu_content-p">
+            Aux États-Unis, la réglementation stricte sur les standards énergétiques a permis de stabiliser, voire de
+            diminuer légèrement la consommation énergétique des climatiseurs malgré l’augmentation des températures. En
+            Chine, l’expansion rapide de la classe moyenne a entraîné une explosion de la demande. Toutefois, des
+            efforts notables sont déployés pour intégrer davantage de <strong>solutions écoénergétiques.</strong>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="menu section pt-5 mt-5">
+  <div class="container-fluid">
+    <div class="row align-items-center">
+      <div class="col-md-12">
+        <div class="menu_content">
+          <h2 class="menu_content-title text-center">Défis et innovations à venir</h2>
+        </div>
+      </div>
+    </div>
+    <div class="row align-items-center mt-5">
+      <div class="col-md-6">
+        <div class="menu_image">
+          <img loading="lazy" src="./assets/img/blog/d4e890ee9de5-CHAUFFE-EAU DAIKIN 4-min.jpeg" alt="" class="menu_image-img4">
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="menu_content">
+          <h2 class="menu_content-title">Technologies émergentes</h2>
+          <p class="menu_content-p m-r-2">
+            De nouvelles technologies offrent des perspectives prometteuses pour réduire encore la consommation
+            énergétique. Parmi celles-ci, on trouve notamment les systèmes basés sur l'intelligence artificielle qui
+            ajustent automatiquement les réglages de température et les horaires de fonctionnement selon les habitudes
+            des utilisateurs.
+          </p>
+        </div>
+        <div class="menu_content">
+          <h2 class="menu_content-title">Politiques gouvernementales et incitations</h2>
+          <p class="menu_content-p m-r-2">
+            Un certain nombre de gouvernements mettent en place des politiques de soutien pour encourager l'utilisation
+            de climatiseurs à haute efficacité énergétique. Ces mesures incluent des subventions, des crédits d'impôt et
+            des programmes de sensibilisation visant à informer les consommateurs sur les avantages financiers et
+            environnementaux associés à une consommation réduite.
+          </p>
+        </div>
+        <div class="menu_content">
+          <h2 class="menu_content-title">Impact des énergies renouvelables</h2>
+          <p class="menu_content-p m-r-2">
+            L'intégration grandissante des <strong>énergies renouvelables</strong> dans les réseaux électriques pourrait
+            aussi jouer un rôle crucial. En allégeant la dépendance envers les sources traditionnelles d'énergie, cela
+            permettrait non seulement de réduire les coûts, mais également de diminuer les <strong>émissions de
+              carbone</strong> associées à la consommation énergétique des climatiseurs.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="menu section pt-5 mt-5  bg-prim">
+  <div class="container-fluid">
+    <div class="row align-items-center">
+      <div class="col-md-12">
+        <div class="menu_content">
+          <h2 class="menu_content-title text-center">Perspectives au niveau régional</h2>
+        </div>
+      </div>
+    </div>
+
+    <div class="row mt-5">
+      <div class="col-md-4 h-100">
+        <div class="menu_content h-100 bg-prim px-5 py-5">
+          <h3 class="boxes_content-title pl-0 ml-0">Europe</h3>
+          <p class="menu_content-p">
+            En Europe, le marché de la climatisation connaît une croissance constante, bien que marquée par des
+            différences importantes entre le nord et le sud du continent. Les pays méditerranéens, confrontés à de
+            longues périodes de chaleur, affichent une consommation énergétique plus élevée comparée aux pays du nord.
+            Une attention particulière est portée à l’innovation en matière d’efficacité énergétique pour atteindre les
+            objectifs globaux de réduction des émissions.
+          </p>
+        </div>
+      </div>
+      <div class="col-md-4 h-100">
+        <div class="menu_content h-100 bg-prim px-5 py-4">
+          <h3 class="boxes_content-title  pl-0 ml-0">Afrique</h3>
+          <p class="menu_content-p">
+            Sur le continent africain, l’adaptation aux conditions climatiques extrêmes présente un défi considérable.
+            Les investissements dans les infrastructures électriques et les programmes de sensibilisation apparaissent
+            nécessaires pour contenir la consommation énergétique. Certains projets mettent l'accent sur des solutions
+            solaires hybrides, capitalisant sur l’abondante ressource solaire locale.
+          </p>
+        </div>
+      </div>
+      <div class="col-md-4 h-100">
+        <div class="menu_content h-100 bg-prim px-5 py-4">
+          <h3 class="boxes_content-title  pl-0 ml-0">Asie</h3>
+          <p class="menu_content-p">
+            Enfin, en Asie, notamment en Inde, Indonésie et Philippines, la croissance économique rapide alimente une
+            demande accrue en systèmes de climatisation. Néanmoins, des opportunités existent pour intégrer des systèmes
+            basés sur les énergies renouvelables et optimiser l’efficacité énergétique à travers des campagnes dirigées
+            tant vers les consommateurs que les producteurs.
+          </p>
+          <p class="menu_content-p">
+            Cet article offre une vue d'ensemble des différents aspects influençant la <strong>consommation
+              énergétique</strong> des climatiseurs pour l'année 2024, tout en soulignant les défis et possibles
+            améliorations dans ce domaine crucial. Que ce soit par des <strong>innovations technologiques</strong>, des
+            <strong>politiques incitatives</strong> ou des ajustements dans les comportements des
+            <strong>utilisateurs</strong>, il existe de multiples façons d'aborder les futures demandes énergétiques
+            liées à la climatisation.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<div class="my-2"></div>
+  </div>
+
+  <div class="fixphone">
+    <div class="Navbar_nav-image d-flex justify-content-center flex-column mx-auto w-100 mt-0 mb-5 pb-5">
+      <img loading="lazy" src="./assets/img/new/decenalle.png" alt="decenalle" class="Navbar_nav-image--img2 my-3">
+      <img loading="lazy" src="./assets/img/new/rge.png" alt="RGE" class="Navbar_nav-image--img2 my-3">
+    </div>
+    <div>
+      <a href="tel:01 85 53 74 38" title="01 85 53 74 38" class="button one phoneone"><i
+          class="fas fa-phone-alt"></i> &nbsp;01 85 53 74 38</a>
+    </div>
+  </div>
+  <footer class="footer section pb-0 bg-prim">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-3 col-sm-6 my-2">
+        <div class="footer_logo mt-5">
+          <img loading="lazy" loading="lazy" src="./assets/img/new/logo.png" alt="" class="footer_logo-img">
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6 my-2">
+        <div class="footer_content">
+          <ul class="footer_content-ul list-none">
+            <p class="footer_content-header">Nos produits et services</p>
+            <li class="footer_content-li mt-3">
+              <a href="./pompe-a-chaleur-air-eau.html"
+                class="footer_content-li--link my-0 py-0  ">Pompe à
+                chaleur</a>
+            </li>
+            <li class="footer_content-li mt-3">
+              <a href="./climatisation-reversible.html"
+                class="footer_content-li--link my-0 py-0  ">Climatisation
+                reversible</a>
+            </li>
+            <li class="footer_content-li mt-3">
+              <a href="./chauffe-eau-thermodynamique.html"
+                class="footer_content-li--link my-0 py-0  ">Chauffe-eau
+                thermodynamique</a>
+            </li>
+            <li class="footer_content-li mt-3">
+              <a href="./entretiens.html"
+                class="footer_content-li--link my-0 py-0  ">Entretien
+                SAV</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6 my-2">
+        <div class="footer_content">
+          <ul class="footer_content-ul list-none">
+            <p class="footer_content-header">Autres liens</p>
+            <li class="footer_content-li mt-3">
+              <a href="./index.html"
+                class="footer_content-li--link my-0 py-0  ">Accueil</a>
+            </li>
+            <li class="footer_content-li mt-3">
+              <a href="./qui-sommes-nous.html"
+                class="footer_content-li--link my-0 py-0  ">Qui
+                sommes nous ?</a>
+            </li>
+            <li class="footer_content-li mt-3">
+              <a href="./galerie.html"
+                class="footer_content-li--link my-0 py-0  ">Nos réalisations</a>
+            </li>
+            <li class="footer_content-li mt-3">
+              <a href="./les-aides.html"
+                class="footer_content-li--link my-0 py-0  ">Les
+                aides</a>
+            </li>
+            <li class="footer_content-li mt-3">
+              <a href="./contact.html"
+                class="footer_content-li--link my-0 py-0  ">Contact</a>
+            </li>
+            <li class="footer_content-li mt-3">
+              <a href="./devenir-franchise.html"
+                class="footer_content-li--link my-0 py-0  ">Devenir
+                franchisé</a>
+            </li>
+            <li class="footer_content-li mt-3">
+              <a href="./devis.html"
+                class="footer_content-li--link my-0 py-0  ">Devis</a>
+            </li>
+            <li class="footer_content-li mt-3">
+              <a href="./blog.html"
+                class="footer_content-li--link my-0 py-0  ">Blog</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6 my-2">
+        <div class="footer_content">
+          <ul class="footer_content-ul list-none">
+            <p class="footer_content-header">Contactez-nous</p>
+            <li class="footer_content-li">
+              <p class="footer_content-li--p">
+                Adresse: 11 Route de Leuville 91310 Linas</p>
+            </li>
+            <li class="footer_content-li">
+              <p class="footer_content-li--p">
+                Téléphone: <a href="tel:01 85 53 74 38" class="footer_content-li--link">
+                  01 85 53 74 38</a></p>
+            </li>
+            <li class="footer_content-li">
+              E-mail: <a href="mailto:loic.seisen@klimat.fr" class="footer_content-li--link">
+                loic.seisen@klimat.fr</a>
+            </li>
+            <li class="footer_content-li mt-3">
+              <p class="footer_content-li--p">Nos horaires :</p>
+            </li>
+            <li class="footer_content-li">
+              <p class="footer_content-li--p">Du lundi au vendredi : 9H00 - 21H00</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer_banner mt-3">
+    <div class="container-fluid">
+      <ul class="footer_banner-ul">
+        <li class="footer_banner-li">
+          <a href="./pompe-a-chaleur-77.html" class="footer_banner-li--link ">Pompe à chaleur 77</a>
+        </li>
+        <li class="footer_banner-li">
+          <a href="./climatisation-91.html" class="footer_banner-li--link ">Climatisation 91</a>
+        </li>
+        <li class="footer_banner-li">
+          <a href="./installateur-essonne.html" class="footer_banner-li--link ">Installateur pompe à chaleur Essonne</a>
+        </li>
+        <li class="footer_banner-li">
+          <a href="./installateur-daikin.html" class="footer_banner-li--link ">Installateur climatisation Daikin</a>
+        </li>
+        <li class="footer_banner-li">
+          <a href="./installateur-pompe-daikin.html" class="footer_banner-li--link ">Installateur pompe à chaleur Daikin</a>
+        </li>
+
+        
+      </ul>
+    </div>
+  </div>
+</footer>
+<div class="footer_bottom d-flex justify-content-center mx-auto py-5 w-100 bg-prim">
+  <div class="">
+    <a href="https://www.bhinternet.fr/" target="_blank"
+      class="footer_content-li--link text-black my-0 text-center w-100">BHInternet - Création site internet
+      entreprise  | 2023 | </a><a href="" class="footer_content-li--link text-black my-0 text-center w-100">
+      Mentions légales</a>
+  </div>
+</div>
+
+
+<script src="./assets/js/index.js"></script>
+<script src="./assets/js/formSubmit.js"></script>
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+</body>
+
+</html>
