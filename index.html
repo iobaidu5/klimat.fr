@@ -74,7 +74,7 @@ gtag('config', 'UA-215575286-1');
   <nav class="navbar Navbar_main navbar-expand-lg fixedNav">
       <div class="container-fluid to-col">
           <div class="Navbar_image">
-              <a href="./index.html" title="Accueil"><img loading="lazy" src="./assets/img/logo.png" class="Navbar_image-img" alt="Logo" /></a>
+              <a href="./accueil.html" title="Accueil"><img loading="lazy" src="./assets/img/logo.png" class="Navbar_image-img" alt="Logo" /></a>
           </div>
           <button class="navbar-toggler Navbar_toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
               aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -84,7 +84,7 @@ gtag('config', 'UA-215575286-1');
               <ul class="navbar-nav Navbar_nav w-100">
                   <li class="nav-item Navbar_nav-item">
                       <a class="nav-link  Navbar_nav-link "
-                          title="Accueil" href="./index.html"> Accueil</a>
+                          title="Accueil" href="./accueil.html"> Accueil</a>
                   </li>
                   <li class="nav-item Navbar_nav-item ">
                       <a class="nav-link  Navbar_nav-link "
@@ -2039,7 +2039,7 @@ gtag('config', 'UA-215575286-1');
           <ul class="footer_content-ul list-none">
             <p class="footer_content-header">Autres liens</p>
             <li class="footer_content-li mt-3">
-              <a href="./index.html"
+              <a href="./accueil.html"
                 class="footer_content-li--link my-0 py-0   active-clr ">Accueil</a>
             </li>
             <li class="footer_content-li mt-3">
@@ -2135,12 +2135,15 @@ gtag('config', 'UA-215575286-1');
   <div class="">
     <a href="https://www.bhinternet.fr/" target="_blank"
       class="footer_content-li--link text-black my-0 text-center w-100">BHInternet - Création site internet
-      entreprise  | 2023 | </a><a href="./mentions-legales.html" class="footer_content-li--link text-black my-0 text-center w-100">
+      entreprise  | <span id="currentYear"></span> | </a><a href="./mentions-legales.html" class="footer_content-li--link text-black my-0 text-center w-100 ">
       Mentions légales</a>
   </div>
 </div>
 
 
+<script>
+  document.getElementById("currentYear").textContent = new Date().getFullYear();
+</script>
 <script src="./assets/js/index.js"></script>
 <script src="./assets/js/formSubmit.js"></script>
 <script src="https://www.google.com/recaptcha/api.js" async defer></script>
